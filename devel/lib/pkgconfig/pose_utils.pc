@@ -1,0 +1,8 @@
+prefix=/home/dawn/Drone/FastLab/perching/Fast-Perching/devel
+
+Name: pose_utils
+Description: Description of pose_utils
+Version: 0.0.0
+Cflags: -I/home/dawn/Drone/FastLab/perching/Fast-Perching/src/odom_vis/pose_utils/include
+Libs: -L${prefix}/lib -lpose_utils
+Requires: 

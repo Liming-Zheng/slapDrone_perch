@@ -1,0 +1,2 @@
+odom_vis/odom_visualization:odom_vis/pose_utils:planning:quadrotor_msgs:traj_opt:vis_utils
+-DCATKIN_DEVEL_PREFIX=/home/dawn/Drone/FastLab/perching/Fast-Perching/devel -DCMAKE_INSTALL_PREFIX=/home/dawn/Drone/FastLab/perching/Fast-Perching/install -G Unix Makefiles
