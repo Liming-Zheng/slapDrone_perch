@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/dawn/Drone/FastLab/perching/Fast-Perching/devel/lib/libplanning_nodelet.pdb"
-  "/home/dawn/Drone/FastLab/perching/Fast-Perching/devel/lib/libplanning_nodelet.so"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libplanning_nodelet.pdb"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libplanning_nodelet.so"
   "CMakeFiles/planning_nodelet.dir/src/planning_nodelet.cpp.o"
 )
 

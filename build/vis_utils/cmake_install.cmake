@@ -1,8 +1,8 @@
-# Install script for directory: /home/dawn/Drone/FastLab/perching/Fast-Perching/src/vis_utils
+# Install script for directory: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/vis_utils
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dawn/Drone/FastLab/perching/Fast-Perching/install")
+  set(CMAKE_INSTALL_PREFIX "/home/dawn/Drone/SlapDrone/slapDrone_perch/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dawn/Drone/FastLab/perching/Fast-Perching/build/vis_utils/catkin_generated/installspace/vis_utils.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/vis_utils/catkin_generated/installspace/vis_utils.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vis_utils/cmake" TYPE FILE FILES
-    "/home/dawn/Drone/FastLab/perching/Fast-Perching/build/vis_utils/catkin_generated/installspace/vis_utilsConfig.cmake"
-    "/home/dawn/Drone/FastLab/perching/Fast-Perching/build/vis_utils/catkin_generated/installspace/vis_utilsConfig-version.cmake"
+    "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/vis_utils/catkin_generated/installspace/vis_utilsConfig.cmake"
+    "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/vis_utils/catkin_generated/installspace/vis_utilsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vis_utils" TYPE FILE FILES "/home/dawn/Drone/FastLab/perching/Fast-Perching/src/vis_utils/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/vis_utils" TYPE FILE FILES "/home/dawn/Drone/SlapDrone/slapDrone_perch/src/vis_utils/package.xml")
 endif()
 

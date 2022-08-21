@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/dawn/Drone/FastLab/perching/Fast-Perching/devel/lib/odom_visualization/odom_visualization"
-  "/home/dawn/Drone/FastLab/perching/Fast-Perching/devel/lib/odom_visualization/odom_visualization.pdb"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/odom_visualization/odom_visualization"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/odom_visualization/odom_visualization.pdb"
   "CMakeFiles/odom_visualization.dir/src/odom_visualization.cpp.o"
 )
 

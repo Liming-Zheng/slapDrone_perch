@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include;/usr/include/eigen3".split(
 PROJECT_CATKIN_DEPENDS = "roscpp;pcl_ros;visualization_msgs;pcl_conversions;nav_msgs".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "vis_utils"
-PROJECT_SPACE_DIR = "/home/dawn/Drone/FastLab/perching/Fast-Perching/install"
+PROJECT_SPACE_DIR = "/home/dawn/Drone/SlapDrone/slapDrone_perch/install"
 PROJECT_VERSION = "0.0.0"

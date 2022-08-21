@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "/usr/include/eigen3".split(';') if "/usr/incl
 PROJECT_CATKIN_DEPENDS = "traj_opt;roscpp;nodelet".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-lplanning".split(';') if "-lplanning" != "" else []
 PROJECT_NAME = "planning"
-PROJECT_SPACE_DIR = "/home/dawn/Drone/FastLab/perching/Fast-Perching/install"
+PROJECT_SPACE_DIR = "/home/dawn/Drone/SlapDrone/slapDrone_perch/install"
 PROJECT_VERSION = "0.0.0"

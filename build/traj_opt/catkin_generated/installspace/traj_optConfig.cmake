@@ -67,14 +67,14 @@ set(traj_opt_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(traj_opt_SOURCE_PREFIX /home/dawn/Drone/FastLab/perching/Fast-Perching/src/traj_opt)
-  set(traj_opt_DEVEL_PREFIX /home/dawn/Drone/FastLab/perching/Fast-Perching/devel)
+  set(traj_opt_SOURCE_PREFIX /home/dawn/Drone/SlapDrone/slapDrone_perch/src/traj_opt)
+  set(traj_opt_DEVEL_PREFIX /home/dawn/Drone/SlapDrone/slapDrone_perch/devel)
   set(traj_opt_INSTALL_PREFIX "")
   set(traj_opt_PREFIX ${traj_opt_DEVEL_PREFIX})
 else()
   set(traj_opt_SOURCE_PREFIX "")
   set(traj_opt_DEVEL_PREFIX "")
-  set(traj_opt_INSTALL_PREFIX /home/dawn/Drone/FastLab/perching/Fast-Perching/install)
+  set(traj_opt_INSTALL_PREFIX /home/dawn/Drone/SlapDrone/slapDrone_perch/install)
   set(traj_opt_PREFIX ${traj_opt_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/dawn/Drone/FastLab/perching/Fast-Perching/install/lib;/home/dawn/Code/ROS_study/ros_base_train/devel/lib;/home/dawn/Drone/Xtdrone/catkin_ws/devel/lib;/home/dawn/Drone/Fixedwing/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/dawn/Drone/SlapDrone/slapDrone_perch/install/lib;/home/dawn/Drone/Amov/v1/Prometheus/devel/lib;/home/dawn/Drone/Fixedwing/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

@@ -2,7 +2,7 @@
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dawn/Drone/FastLab/perching/Fast-Perching/install")
+  set(CMAKE_INSTALL_PREFIX "/home/dawn/Drone/SlapDrone/slapDrone_perch/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dawn/Drone/FastLab/perching/Fast-Perching/build/gtest/googlemock/cmake_install.cmake")
+  include("/home/dawn/Drone/SlapDrone/slapDrone_perch/build/gtest/googlemock/cmake_install.cmake")
 
 endif()
 

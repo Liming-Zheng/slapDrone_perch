@@ -67,14 +67,14 @@ set(quadrotor_msgs_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("TRUE" STREQUAL "TRUE")
-  set(quadrotor_msgs_SOURCE_PREFIX /home/dawn/Drone/FastLab/perching/Fast-Perching/src/quadrotor_msgs)
-  set(quadrotor_msgs_DEVEL_PREFIX /home/dawn/Drone/FastLab/perching/Fast-Perching/devel)
+  set(quadrotor_msgs_SOURCE_PREFIX /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs)
+  set(quadrotor_msgs_DEVEL_PREFIX /home/dawn/Drone/SlapDrone/slapDrone_perch/devel)
   set(quadrotor_msgs_INSTALL_PREFIX "")
   set(quadrotor_msgs_PREFIX ${quadrotor_msgs_DEVEL_PREFIX})
 else()
   set(quadrotor_msgs_SOURCE_PREFIX "")
   set(quadrotor_msgs_DEVEL_PREFIX "")
-  set(quadrotor_msgs_INSTALL_PREFIX /home/dawn/Drone/FastLab/perching/Fast-Perching/install)
+  set(quadrotor_msgs_INSTALL_PREFIX /home/dawn/Drone/SlapDrone/slapDrone_perch/install)
   set(quadrotor_msgs_PREFIX ${quadrotor_msgs_INSTALL_PREFIX})
 endif()
 
@@ -91,9 +91,9 @@ endif()
 # flag project as catkin-based to distinguish if a find_package()-ed project is a catkin project
 set(quadrotor_msgs_FOUND_CATKIN_PROJECT TRUE)
 
-if(NOT "/home/dawn/Drone/FastLab/perching/Fast-Perching/devel/include " STREQUAL " ")
+if(NOT "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include " STREQUAL " ")
   set(quadrotor_msgs_INCLUDE_DIRS "")
-  set(_include_dirs "/home/dawn/Drone/FastLab/perching/Fast-Perching/devel/include")
+  set(_include_dirs "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include")
   if(NOT " " STREQUAL " ")
     set(_report "Check the issue tracker '' and consider creating a ticket if the problem has not been reported yet.")
   elseif(NOT "http://ros.org/wiki/quadrotor_msgs " STREQUAL " ")
@@ -110,7 +110,7 @@ if(NOT "/home/dawn/Drone/FastLab/perching/Fast-Perching/devel/include " STREQUAL
         message(FATAL_ERROR "Project 'quadrotor_msgs' specifies '${idir}' as an include dir, which is not found.  It does not exist in '${include}'.  ${_report}")
       endif()
     else()
-      message(FATAL_ERROR "Project 'quadrotor_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/dawn/Drone/FastLab/perching/Fast-Perching/src/quadrotor_msgs/${idir}'.  ${_report}")
+      message(FATAL_ERROR "Project 'quadrotor_msgs' specifies '${idir}' as an include dir, which is not found.  It does neither exist as an absolute directory nor in '/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/${idir}'.  ${_report}")
     endif()
     _list_append_unique(quadrotor_msgs_INCLUDE_DIRS ${include})
   endforeach()
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/dawn/Drone/FastLab/perching/Fast-Perching/devel/lib;/home/dawn/Code/ROS_study/ros_base_train/devel/lib;/home/dawn/Drone/Xtdrone/catkin_ws/devel/lib;/home/dawn/Drone/Fixedwing/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib;/home/dawn/Drone/Amov/v1/Prometheus/devel/lib;/home/dawn/Drone/Fixedwing/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

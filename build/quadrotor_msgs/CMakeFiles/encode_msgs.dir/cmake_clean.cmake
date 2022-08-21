@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/dawn/Drone/FastLab/perching/Fast-Perching/devel/lib/libencode_msgs.pdb"
-  "/home/dawn/Drone/FastLab/perching/Fast-Perching/devel/lib/libencode_msgs.so"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libencode_msgs.pdb"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libencode_msgs.so"
   "CMakeFiles/encode_msgs.dir/src/encode_msgs.cpp.o"
 )
 

@@ -6,5 +6,5 @@ CXX_FLAGS = -fPIC
 
 CXX_DEFINES = -DROSCONSOLE_BACKEND_LOG4CXX -DROS_BUILD_SHARED_LIBS=1 -DROS_PACKAGE_NAME=\"quadrotor_msgs\" -Dencode_msgs_EXPORTS
 
-CXX_INCLUDES = -I/home/dawn/Drone/FastLab/perching/Fast-Perching/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/dawn/Drone/FastLab/perching/Fast-Perching/src/quadrotor_msgs/include -I/usr/include/eigen3 
+CXX_INCLUDES = -I/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include -I/opt/ros/noetic/include -I/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp -I/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/include -I/usr/include/eigen3 
 

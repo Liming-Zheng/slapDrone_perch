@@ -1,8 +1,8 @@
-prefix=/home/dawn/Drone/FastLab/perching/Fast-Perching/devel
+prefix=/home/dawn/Drone/SlapDrone/slapDrone_perch/devel
 
 Name: traj_opt
 Description: Description of traj_opt
 Version: 0.0.0
-Cflags: -I/home/dawn/Drone/FastLab/perching/Fast-Perching/src/traj_opt/include -I/usr/include/eigen3
+Cflags: -I/home/dawn/Drone/SlapDrone/slapDrone_perch/src/traj_opt/include -I/usr/include/eigen3
 Libs: -L${prefix}/lib -ltraj_opt
 Requires: roscpp

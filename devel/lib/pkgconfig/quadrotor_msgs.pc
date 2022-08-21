@@ -1,8 +1,8 @@
-prefix=/home/dawn/Drone/FastLab/perching/Fast-Perching/devel
+prefix=/home/dawn/Drone/SlapDrone/slapDrone_perch/devel
 
 Name: quadrotor_msgs
 Description: Description of quadrotor_msgs
 Version: 0.0.0
-Cflags: -I/home/dawn/Drone/FastLab/perching/Fast-Perching/devel/include
+Cflags: -I/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include
 Libs: -L${prefix}/lib -lencode_msgs -ldecode_msgs
 Requires: message_runtime

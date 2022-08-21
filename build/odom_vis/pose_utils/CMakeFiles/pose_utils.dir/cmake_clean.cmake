@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/home/dawn/Drone/FastLab/perching/Fast-Perching/devel/lib/libpose_utils.pdb"
-  "/home/dawn/Drone/FastLab/perching/Fast-Perching/devel/lib/libpose_utils.so"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libpose_utils.pdb"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libpose_utils.so"
   "CMakeFiles/pose_utils.dir/src/pose_utils.cpp.o"
 )
 
