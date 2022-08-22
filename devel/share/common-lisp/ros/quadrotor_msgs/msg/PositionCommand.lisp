@@ -27,6 +27,11 @@
     :initarg :acceleration
     :type geometry_msgs-msg:Vector3
     :initform (cl:make-instance 'geometry_msgs-msg:Vector3))
+   (jerk
+    :reader jerk
+    :initarg :jerk
+    :type geometry_msgs-msg:Vector3
+    :initform (cl:make-instance 'geometry_msgs-msg:Vector3))
    (yaw
     :reader yaw
     :initarg :yaw
@@ -87,6 +92,11 @@
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader quadrotor_msgs-msg:acceleration-val is deprecated.  Use quadrotor_msgs-msg:acceleration instead.")
   (acceleration m))
 
+(cl:ensure-generic-function 'jerk-val :lambda-list '(m))
+(cl:defmethod jerk-val ((m <PositionCommand>))
+  (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader quadrotor_msgs-msg:jerk-val is deprecated.  Use quadrotor_msgs-msg:jerk instead.")
+  (jerk m))
+
 (cl:ensure-generic-function 'yaw-val :lambda-list '(m))
 (cl:defmethod yaw-val ((m <PositionCommand>))
   (roslisp-msg-protocol:msg-deprecation-warning "Using old-style slot reader quadrotor_msgs-msg:yaw-val is deprecated.  Use quadrotor_msgs-msg:yaw instead.")
@@ -142,6 +152,7 @@
   (roslisp-msg-protocol:serialize (cl:slot-value msg 'position) ostream)
   (roslisp-msg-protocol:serialize (cl:slot-value msg 'velocity) ostream)
   (roslisp-msg-protocol:serialize (cl:slot-value msg 'acceleration) ostream)
+  (roslisp-msg-protocol:serialize (cl:slot-value msg 'jerk) ostream)
   (cl:let ((bits (roslisp-utils:encode-double-float-bits (cl:slot-value msg 'yaw))))
     (cl:write-byte (cl:ldb (cl:byte 8 0) bits) ostream)
     (cl:write-byte (cl:ldb (cl:byte 8 8) bits) ostream)
@@ -192,6 +203,7 @@
   (roslisp-msg-protocol:deserialize (cl:slot-value msg 'position) istream)
   (roslisp-msg-protocol:deserialize (cl:slot-value msg 'velocity) istream)
   (roslisp-msg-protocol:deserialize (cl:slot-value msg 'acceleration) istream)
+  (roslisp-msg-protocol:deserialize (cl:slot-value msg 'jerk) istream)
     (cl:let ((bits 0))
       (cl:setf (cl:ldb (cl:byte 8 0) bits) (cl:read-byte istream))
       (cl:setf (cl:ldb (cl:byte 8 8) bits) (cl:read-byte istream))
@@ -253,22 +265,23 @@
   "quadrotor_msgs/PositionCommand")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql '<PositionCommand>)))
   "Returns md5sum for a message object of type '<PositionCommand>"
-  "4712f0609ca29a79af79a35ca3e3967a")
+  "2809eb0c779bbce5b8d66b95a05bd27b")
 (cl:defmethod roslisp-msg-protocol:md5sum ((type (cl:eql 'PositionCommand)))
   "Returns md5sum for a message object of type 'PositionCommand"
-  "4712f0609ca29a79af79a35ca3e3967a")
+  "2809eb0c779bbce5b8d66b95a05bd27b")
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql '<PositionCommand>)))
   "Returns full string definition for message of type '<PositionCommand>"
-  (cl:format cl:nil "Header header~%geometry_msgs/Point position~%geometry_msgs/Vector3 velocity~%geometry_msgs/Vector3 acceleration~%float64 yaw~%float64 yaw_dot~%float64[3] kx~%float64[3] kv ~%~%uint32 trajectory_id~%~%uint8 TRAJECTORY_STATUS_EMPTY = 0~%uint8 TRAJECTORY_STATUS_READY = 1~%uint8 TRAJECTORY_STATUS_COMPLETED = 3~%uint8 TRAJECTROY_STATUS_ABORT = 4~%uint8 TRAJECTORY_STATUS_ILLEGAL_START = 5~%uint8 TRAJECTORY_STATUS_ILLEGAL_FINAL = 6~%uint8 TRAJECTORY_STATUS_IMPOSSIBLE = 7~%~%# Its ID number will start from 1, allowing you comparing it with 0.~%uint8 trajectory_flag~%~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%string frame_id~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: geometry_msgs/Vector3~%# This represents a vector in free space. ~%# It is only meant to represent a direction. Therefore, it does not~%# make sense to apply a translation to it (e.g., when applying a ~%# generic rigid transformation to a Vector3, tf2 will only apply the~%# rotation). If you want your data to be translatable too, use the~%# geometry_msgs/Point message instead.~%~%float64 x~%float64 y~%float64 z~%~%"))
+  (cl:format cl:nil "Header header~%geometry_msgs/Point position~%geometry_msgs/Vector3 velocity~%geometry_msgs/Vector3 acceleration~%geometry_msgs/Vector3 jerk~%float64 yaw~%float64 yaw_dot~%float64[3] kx~%float64[3] kv ~%~%uint32 trajectory_id~%~%uint8 TRAJECTORY_STATUS_EMPTY = 0~%uint8 TRAJECTORY_STATUS_READY = 1~%uint8 TRAJECTORY_STATUS_COMPLETED = 3~%uint8 TRAJECTROY_STATUS_ABORT = 4~%uint8 TRAJECTORY_STATUS_ILLEGAL_START = 5~%uint8 TRAJECTORY_STATUS_ILLEGAL_FINAL = 6~%uint8 TRAJECTORY_STATUS_IMPOSSIBLE = 7~%~%# Its ID number will start from 1, allowing you comparing it with 0.~%uint8 trajectory_flag~%~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%string frame_id~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: geometry_msgs/Vector3~%# This represents a vector in free space. ~%# It is only meant to represent a direction. Therefore, it does not~%# make sense to apply a translation to it (e.g., when applying a ~%# generic rigid transformation to a Vector3, tf2 will only apply the~%# rotation). If you want your data to be translatable too, use the~%# geometry_msgs/Point message instead.~%~%float64 x~%float64 y~%float64 z~%~%"))
 (cl:defmethod roslisp-msg-protocol:message-definition ((type (cl:eql 'PositionCommand)))
   "Returns full string definition for message of type 'PositionCommand"
-  (cl:format cl:nil "Header header~%geometry_msgs/Point position~%geometry_msgs/Vector3 velocity~%geometry_msgs/Vector3 acceleration~%float64 yaw~%float64 yaw_dot~%float64[3] kx~%float64[3] kv ~%~%uint32 trajectory_id~%~%uint8 TRAJECTORY_STATUS_EMPTY = 0~%uint8 TRAJECTORY_STATUS_READY = 1~%uint8 TRAJECTORY_STATUS_COMPLETED = 3~%uint8 TRAJECTROY_STATUS_ABORT = 4~%uint8 TRAJECTORY_STATUS_ILLEGAL_START = 5~%uint8 TRAJECTORY_STATUS_ILLEGAL_FINAL = 6~%uint8 TRAJECTORY_STATUS_IMPOSSIBLE = 7~%~%# Its ID number will start from 1, allowing you comparing it with 0.~%uint8 trajectory_flag~%~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%string frame_id~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: geometry_msgs/Vector3~%# This represents a vector in free space. ~%# It is only meant to represent a direction. Therefore, it does not~%# make sense to apply a translation to it (e.g., when applying a ~%# generic rigid transformation to a Vector3, tf2 will only apply the~%# rotation). If you want your data to be translatable too, use the~%# geometry_msgs/Point message instead.~%~%float64 x~%float64 y~%float64 z~%~%"))
+  (cl:format cl:nil "Header header~%geometry_msgs/Point position~%geometry_msgs/Vector3 velocity~%geometry_msgs/Vector3 acceleration~%geometry_msgs/Vector3 jerk~%float64 yaw~%float64 yaw_dot~%float64[3] kx~%float64[3] kv ~%~%uint32 trajectory_id~%~%uint8 TRAJECTORY_STATUS_EMPTY = 0~%uint8 TRAJECTORY_STATUS_READY = 1~%uint8 TRAJECTORY_STATUS_COMPLETED = 3~%uint8 TRAJECTROY_STATUS_ABORT = 4~%uint8 TRAJECTORY_STATUS_ILLEGAL_START = 5~%uint8 TRAJECTORY_STATUS_ILLEGAL_FINAL = 6~%uint8 TRAJECTORY_STATUS_IMPOSSIBLE = 7~%~%# Its ID number will start from 1, allowing you comparing it with 0.~%uint8 trajectory_flag~%~%================================================================================~%MSG: std_msgs/Header~%# Standard metadata for higher-level stamped data types.~%# This is generally used to communicate timestamped data ~%# in a particular coordinate frame.~%# ~%# sequence ID: consecutively increasing ID ~%uint32 seq~%#Two-integer timestamp that is expressed as:~%# * stamp.sec: seconds (stamp_secs) since epoch (in Python the variable is called 'secs')~%# * stamp.nsec: nanoseconds since stamp_secs (in Python the variable is called 'nsecs')~%# time-handling sugar is provided by the client library~%time stamp~%#Frame this data is associated with~%string frame_id~%~%================================================================================~%MSG: geometry_msgs/Point~%# This contains the position of a point in free space~%float64 x~%float64 y~%float64 z~%~%================================================================================~%MSG: geometry_msgs/Vector3~%# This represents a vector in free space. ~%# It is only meant to represent a direction. Therefore, it does not~%# make sense to apply a translation to it (e.g., when applying a ~%# generic rigid transformation to a Vector3, tf2 will only apply the~%# rotation). If you want your data to be translatable too, use the~%# geometry_msgs/Point message instead.~%~%float64 x~%float64 y~%float64 z~%~%"))
 (cl:defmethod roslisp-msg-protocol:serialization-length ((msg <PositionCommand>))
   (cl:+ 0
      (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'header))
      (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'position))
      (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'velocity))
      (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'acceleration))
+     (roslisp-msg-protocol:serialization-length (cl:slot-value msg 'jerk))
      8
      8
      0 (cl:reduce #'cl:+ (cl:slot-value msg 'kx) :key #'(cl:lambda (ele) (cl:declare (cl:ignorable ele)) (cl:+ 8)))
@@ -283,6 +296,7 @@
     (cl:cons ':position (position msg))
     (cl:cons ':velocity (velocity msg))
     (cl:cons ':acceleration (acceleration msg))
+    (cl:cons ':jerk (jerk msg))
     (cl:cons ':yaw (yaw msg))
     (cl:cons ':yaw_dot (yaw_dot msg))
     (cl:cons ':kx (kx msg))

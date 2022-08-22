@@ -19,6 +19,7 @@
 #include <geometry_msgs/Point.h>
 #include <geometry_msgs/Vector3.h>
 #include <geometry_msgs/Vector3.h>
+#include <geometry_msgs/Vector3.h>
 
 namespace quadrotor_msgs
 {
@@ -32,6 +33,7 @@ struct PositionCommand_
     , position()
     , velocity()
     , acceleration()
+    , jerk()
     , yaw(0.0)
     , yaw_dot(0.0)
     , kx()
@@ -47,6 +49,7 @@ struct PositionCommand_
     , position(_alloc)
     , velocity(_alloc)
     , acceleration(_alloc)
+    , jerk(_alloc)
     , yaw(0.0)
     , yaw_dot(0.0)
     , kx()
@@ -72,6 +75,9 @@ struct PositionCommand_
 
    typedef  ::geometry_msgs::Vector3_<ContainerAllocator>  _acceleration_type;
   _acceleration_type acceleration;
+
+   typedef  ::geometry_msgs::Vector3_<ContainerAllocator>  _jerk_type;
+  _jerk_type jerk;
 
    typedef double _yaw_type;
   _yaw_type yaw;
@@ -170,6 +176,7 @@ bool operator==(const ::quadrotor_msgs::PositionCommand_<ContainerAllocator1> & 
     lhs.position == rhs.position &&
     lhs.velocity == rhs.velocity &&
     lhs.acceleration == rhs.acceleration &&
+    lhs.jerk == rhs.jerk &&
     lhs.yaw == rhs.yaw &&
     lhs.yaw_dot == rhs.yaw_dot &&
     lhs.kx == rhs.kx &&
@@ -232,12 +239,12 @@ struct MD5Sum< ::quadrotor_msgs::PositionCommand_<ContainerAllocator> >
 {
   static const char* value()
   {
-    return "4712f0609ca29a79af79a35ca3e3967a";
+    return "2809eb0c779bbce5b8d66b95a05bd27b";
   }
 
   static const char* value(const ::quadrotor_msgs::PositionCommand_<ContainerAllocator>&) { return value(); }
-  static const uint64_t static_value1 = 0x4712f0609ca29a79ULL;
-  static const uint64_t static_value2 = 0xaf79a35ca3e3967aULL;
+  static const uint64_t static_value1 = 0x2809eb0c779bbce5ULL;
+  static const uint64_t static_value2 = 0xb8d66b95a05bd27bULL;
 };
 
 template<class ContainerAllocator>
@@ -260,6 +267,7 @@ struct Definition< ::quadrotor_msgs::PositionCommand_<ContainerAllocator> >
 "geometry_msgs/Point position\n"
 "geometry_msgs/Vector3 velocity\n"
 "geometry_msgs/Vector3 acceleration\n"
+"geometry_msgs/Vector3 jerk\n"
 "float64 yaw\n"
 "float64 yaw_dot\n"
 "float64[3] kx\n"
@@ -335,6 +343,7 @@ namespace serialization
       stream.next(m.position);
       stream.next(m.velocity);
       stream.next(m.acceleration);
+      stream.next(m.jerk);
       stream.next(m.yaw);
       stream.next(m.yaw_dot);
       stream.next(m.kx);
@@ -371,6 +380,9 @@ struct Printer< ::quadrotor_msgs::PositionCommand_<ContainerAllocator> >
     s << indent << "acceleration: ";
     s << std::endl;
     Printer< ::geometry_msgs::Vector3_<ContainerAllocator> >::stream(s, indent + "  ", v.acceleration);
+    s << indent << "jerk: ";
+    s << std::endl;
+    Printer< ::geometry_msgs::Vector3_<ContainerAllocator> >::stream(s, indent + "  ", v.jerk);
     s << indent << "yaw: ";
     Printer<double>::stream(s, indent + "  ", v.yaw);
     s << indent << "yaw_dot: ";

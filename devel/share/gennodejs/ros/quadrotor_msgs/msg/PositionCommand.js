@@ -11,8 +11,8 @@ const _deserializer = _ros_msg_utils.Deserialize;
 const _arrayDeserializer = _deserializer.Array;
 const _finder = _ros_msg_utils.Find;
 const _getByteLength = _ros_msg_utils.getByteLength;
-let geometry_msgs = _finder('geometry_msgs');
 let std_msgs = _finder('std_msgs');
+let geometry_msgs = _finder('geometry_msgs');
 
 //-----------------------------------------------------------
 
@@ -24,6 +24,7 @@ class PositionCommand {
       this.position = null;
       this.velocity = null;
       this.acceleration = null;
+      this.jerk = null;
       this.yaw = null;
       this.yaw_dot = null;
       this.kx = null;
@@ -55,6 +56,12 @@ class PositionCommand {
       }
       else {
         this.acceleration = new geometry_msgs.msg.Vector3();
+      }
+      if (initObj.hasOwnProperty('jerk')) {
+        this.jerk = initObj.jerk
+      }
+      else {
+        this.jerk = new geometry_msgs.msg.Vector3();
       }
       if (initObj.hasOwnProperty('yaw')) {
         this.yaw = initObj.yaw
@@ -105,6 +112,8 @@ class PositionCommand {
     bufferOffset = geometry_msgs.msg.Vector3.serialize(obj.velocity, buffer, bufferOffset);
     // Serialize message field [acceleration]
     bufferOffset = geometry_msgs.msg.Vector3.serialize(obj.acceleration, buffer, bufferOffset);
+    // Serialize message field [jerk]
+    bufferOffset = geometry_msgs.msg.Vector3.serialize(obj.jerk, buffer, bufferOffset);
     // Serialize message field [yaw]
     bufferOffset = _serializer.float64(obj.yaw, buffer, bufferOffset);
     // Serialize message field [yaw_dot]
@@ -140,6 +149,8 @@ class PositionCommand {
     data.velocity = geometry_msgs.msg.Vector3.deserialize(buffer, bufferOffset);
     // Deserialize message field [acceleration]
     data.acceleration = geometry_msgs.msg.Vector3.deserialize(buffer, bufferOffset);
+    // Deserialize message field [jerk]
+    data.jerk = geometry_msgs.msg.Vector3.deserialize(buffer, bufferOffset);
     // Deserialize message field [yaw]
     data.yaw = _deserializer.float64(buffer, bufferOffset);
     // Deserialize message field [yaw_dot]
@@ -158,7 +169,7 @@ class PositionCommand {
   static getMessageSize(object) {
     let length = 0;
     length += std_msgs.msg.Header.getMessageSize(object.header);
-    return length + 141;
+    return length + 165;
   }
 
   static datatype() {
@@ -168,7 +179,7 @@ class PositionCommand {
 
   static md5sum() {
     //Returns md5sum for a message object
-    return '4712f0609ca29a79af79a35ca3e3967a';
+    return '2809eb0c779bbce5b8d66b95a05bd27b';
   }
 
   static messageDefinition() {
@@ -178,6 +189,7 @@ class PositionCommand {
     geometry_msgs/Point position
     geometry_msgs/Vector3 velocity
     geometry_msgs/Vector3 acceleration
+    geometry_msgs/Vector3 jerk
     float64 yaw
     float64 yaw_dot
     float64[3] kx
@@ -266,6 +278,13 @@ class PositionCommand {
     }
     else {
       resolved.acceleration = new geometry_msgs.msg.Vector3()
+    }
+
+    if (msg.jerk !== undefined) {
+      resolved.jerk = geometry_msgs.msg.Vector3.Resolve(msg.jerk)
+    }
+    else {
+      resolved.jerk = new geometry_msgs.msg.Vector3()
     }
 
     if (msg.yaw !== undefined) {

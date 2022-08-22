@@ -189,6 +189,8 @@ planning_nodelet_EXTERNAL_OBJECTS =
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libplanning_nodelet.so: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libplanning_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_regex.so.1.71.0
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libplanning_nodelet.so: /opt/ros/noetic/lib/libxmlrpcpp.so
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libplanning_nodelet.so: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libencode_msgs.so
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libplanning_nodelet.so: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libdecode_msgs.so
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libplanning_nodelet.so: /opt/ros/noetic/lib/libroscpp_serialization.so
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libplanning_nodelet.so: /opt/ros/noetic/lib/librostime.so
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libplanning_nodelet.so: /usr/lib/x86_64-linux-gnu/libboost_date_time.so.1.71.0

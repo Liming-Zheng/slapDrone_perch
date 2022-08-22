@@ -51,7 +51,7 @@
 
 (defclass quadrotor_msgs::PositionCommand
   :super ros::object
-  :slots (_header _position _velocity _acceleration _yaw _yaw_dot _kx _kv _trajectory_id _trajectory_flag ))
+  :slots (_header _position _velocity _acceleration _jerk _yaw _yaw_dot _kx _kv _trajectory_id _trajectory_flag ))
 
 (defmethod quadrotor_msgs::PositionCommand
   (:init
@@ -60,6 +60,7 @@
     ((:position __position) (instance geometry_msgs::Point :init))
     ((:velocity __velocity) (instance geometry_msgs::Vector3 :init))
     ((:acceleration __acceleration) (instance geometry_msgs::Vector3 :init))
+    ((:jerk __jerk) (instance geometry_msgs::Vector3 :init))
     ((:yaw __yaw) 0.0)
     ((:yaw_dot __yaw_dot) 0.0)
     ((:kx __kx) (make-array 3 :initial-element 0.0 :element-type :float))
@@ -72,6 +73,7 @@
    (setq _position __position)
    (setq _velocity __velocity)
    (setq _acceleration __acceleration)
+   (setq _jerk __jerk)
    (setq _yaw (float __yaw))
    (setq _yaw_dot (float __yaw_dot))
    (setq _kx __kx)
@@ -107,6 +109,13 @@
      (progn
        (if __acceleration (setq _acceleration (car __acceleration)))
        _acceleration)))
+  (:jerk
+   (&rest __jerk)
+   (if (keywordp (car __jerk))
+       (send* _jerk __jerk)
+     (progn
+       (if __jerk (setq _jerk (car __jerk)))
+       _jerk)))
   (:yaw
    (&optional __yaw)
    (if __yaw (setq _yaw __yaw)) _yaw)
@@ -136,6 +145,8 @@
     (send _velocity :serialization-length)
     ;; geometry_msgs/Vector3 _acceleration
     (send _acceleration :serialization-length)
+    ;; geometry_msgs/Vector3 _jerk
+    (send _jerk :serialization-length)
     ;; float64 _yaw
     8
     ;; float64 _yaw_dot
@@ -161,6 +172,8 @@
        (send _velocity :serialize s)
      ;; geometry_msgs/Vector3 _acceleration
        (send _acceleration :serialize s)
+     ;; geometry_msgs/Vector3 _jerk
+       (send _jerk :serialize s)
      ;; float64 _yaw
        (sys::poke _yaw (send s :buffer) (send s :count) :double) (incf (stream-count s) 8)
      ;; float64 _yaw_dot
@@ -189,6 +202,8 @@
      (send _velocity :deserialize buf ptr-) (incf ptr- (send _velocity :serialization-length))
    ;; geometry_msgs/Vector3 _acceleration
      (send _acceleration :deserialize buf ptr-) (incf ptr- (send _acceleration :serialization-length))
+   ;; geometry_msgs/Vector3 _jerk
+     (send _jerk :deserialize buf ptr-) (incf ptr- (send _jerk :serialization-length))
    ;; float64 _yaw
      (setq _yaw (sys::peek buf ptr- :double)) (incf ptr- 8)
    ;; float64 _yaw_dot
@@ -209,13 +224,14 @@
    self)
   )
 
-(setf (get quadrotor_msgs::PositionCommand :md5sum-) "4712f0609ca29a79af79a35ca3e3967a")
+(setf (get quadrotor_msgs::PositionCommand :md5sum-) "2809eb0c779bbce5b8d66b95a05bd27b")
 (setf (get quadrotor_msgs::PositionCommand :datatype-) "quadrotor_msgs/PositionCommand")
 (setf (get quadrotor_msgs::PositionCommand :definition-)
       "Header header
 geometry_msgs/Point position
 geometry_msgs/Vector3 velocity
 geometry_msgs/Vector3 acceleration
+geometry_msgs/Vector3 jerk
 float64 yaw
 float64 yaw_dot
 float64[3] kx
@@ -273,6 +289,6 @@ float64 z
 
 
 
-(provide :quadrotor_msgs/PositionCommand "4712f0609ca29a79af79a35ca3e3967a")
+(provide :quadrotor_msgs/PositionCommand "2809eb0c779bbce5b8d66b95a05bd27b")
 
 

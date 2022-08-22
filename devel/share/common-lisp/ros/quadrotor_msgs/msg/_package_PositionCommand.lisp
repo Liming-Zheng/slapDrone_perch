@@ -7,6 +7,8 @@
           VELOCITY
           ACCELERATION-VAL
           ACCELERATION
+          JERK-VAL
+          JERK
           YAW-VAL
           YAW
           YAW_DOT-VAL

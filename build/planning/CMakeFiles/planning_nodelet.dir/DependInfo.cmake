@@ -19,6 +19,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
   "/usr/include/eigen3"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include"
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/src/traj_opt/include"
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/src/vis_utils/include"
   "/opt/ros/noetic/include"
@@ -31,6 +32,8 @@ set(CMAKE_CXX_TARGET_INCLUDE_PATH
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/traj_opt/CMakeFiles/traj_opt.dir/DependInfo.cmake"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs/CMakeFiles/encode_msgs.dir/DependInfo.cmake"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs/CMakeFiles/decode_msgs.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

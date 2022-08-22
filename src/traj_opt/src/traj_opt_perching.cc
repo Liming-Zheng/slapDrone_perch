@@ -298,6 +298,14 @@ bool TrajOpt::generate_traj(const Eigen::MatrixXd& iniState,
                             const int& N,
                             Trajectory& traj,
                             const double& t_replan) {
+  /*
+    iniState: 初始化状态
+    car_p: 目标的位置
+    car_v: 目标的速度
+    land_q： 计划的最终角度
+    
+
+  */
   N_ = N;
   dim_t_ = 1;
   dim_p_ = N_ - 1;

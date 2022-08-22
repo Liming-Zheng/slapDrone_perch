@@ -5,6 +5,7 @@
 #include <ros/ros.h>
 #include <std_msgs/Empty.h>
 #include <traj_opt/traj_opt.h>
+#include <quadrotor_msgs/PositionCommand.h>
 
 #include <Eigen/Core>
 #include <atomic>
@@ -21,8 +22,14 @@ class Nodelet : public nodelet::Nodelet {
   ros::Subscriber triger_sub_;
   ros::Timer plan_timer_;
 
+  // dawn
+  ros::Publisher slap_odom_pub;
+
   std::shared_ptr<vis_utils::VisUtils> visPtr_;
   std::shared_ptr<traj_opt::TrajOpt> trajOptPtr_;
+
+  // dawn pub the cmd topic to slapDrone_base
+  quadrotor_msgs::PositionCommand slap_odom;
 
   // NOTE planning or fake target
   bool target_ = false;
@@ -145,10 +152,27 @@ class Nodelet : public nodelet::Nodelet {
       ros::Duration(dt).sleep();
       // drone
       Eigen::Vector3d p = traj.getPos(t);
+      Eigen::Vector3d dawn_v = traj.getVel(t);
       Eigen::Vector3d a = traj.getAcc(t);
       Eigen::Vector3d j = traj.getJer(t);
       Eigen::Vector3d g(0, 0, -9.8);
       Eigen::Vector3d thrust = a - g;
+
+      //dawn publish the trajectory msg to px4control
+      slap_odom.position.x = p.x();
+      slap_odom.position.y = p.y();
+      slap_odom.position.z = p.z();
+      slap_odom.velocity.x = dawn_v.x();
+      slap_odom.velocity.y = dawn_v.y();
+      slap_odom.velocity.z = dawn_v.z();
+      slap_odom.acceleration.x = a.x();
+      slap_odom.acceleration.y = a.y();
+      slap_odom.acceleration.z = a.z();
+      slap_odom.jerk.x = j.x();
+      slap_odom.jerk.y = j.y();
+      slap_odom.jerk.z = j.z();
+
+      slap_odom_pub.publish(slap_odom);
 
       // std::cout << p.x() << " , " << p.z() << " , ";
 
@@ -262,6 +286,10 @@ class Nodelet : public nodelet::Nodelet {
     plan_timer_ = nh.createTimer(ros::Duration(1.0 / plan_hz_), &Nodelet::debug_timer_callback, this);
 
     triger_sub_ = nh.subscribe<geometry_msgs::PoseStamped>("triger", 10, &Nodelet::triger_callback, this, ros::TransportHints().tcpNoDelay());
+
+    // dawn
+    slap_odom_pub = nh.advertise<quadrotor_msgs::PositionCommand>("/drone_commander/onboard_command", 10);
+
     ROS_WARN("Planning node initialized!");
   }
 
