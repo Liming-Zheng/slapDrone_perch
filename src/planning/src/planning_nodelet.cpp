@@ -171,6 +171,7 @@ class Nodelet : public nodelet::Nodelet {
       slap_odom.jerk.x = j.x();
       slap_odom.jerk.y = j.y();
       slap_odom.jerk.z = j.z();
+      ROS_INFO("Liming pub-------------------------------");
 
       slap_odom_pub.publish(slap_odom);
 

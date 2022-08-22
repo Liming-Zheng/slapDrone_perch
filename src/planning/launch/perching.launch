@@ -32,7 +32,7 @@
       <param name="plan_hz" value="5"/>
 
       <param name="K" value="16"/>
-      <param name="vmax" value="3.0"/>
+      <param name="vmax" value="1.0"/>
       <param name="amax" value="3.0"/>
 
       <param name="thrust_max" value="17.0"/>
@@ -54,11 +54,11 @@
       <param name="rhoOmega" value="100000.0"/>
       <param name="rhoPerchingCollision" value="1000000.0"/>
 
-      <param name="perching_px" value="8.5"/>
-      <param name="perching_py" value="8.0"/>
+      <param name="perching_px" value="15.5"/>
+      <param name="perching_py" value="15.0"/>
       <!-- <param name="perching_pz" value="1.0"/> -->
       <!-- <param name="perching_pz" value="1.5"/> -->
-      <param name="perching_pz" value="2.0"/>
+      <param name="perching_pz" value="1.0"/>
       <!-- <param name="perching_vx" value="2.0"/> -->
       <param name="perching_vx" value="0.0"/>
       <param name="perching_vy" value="0.0"/>
