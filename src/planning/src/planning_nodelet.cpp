@@ -22,8 +22,17 @@ class Nodelet : public nodelet::Nodelet {
   ros::Subscriber triger_sub_;
   ros::Timer plan_timer_;
 
-  // dawn
+  // dawn   
   ros::Publisher slap_odom_pub;
+  ros::Subscriber now_position_sub;
+  ros::Time time_get_pub;
+  ros::Time time_pub_cmd;
+  bool pub_time = true;
+  nav_msgs::Odometry now_position;
+  bool now_position_enable = true;
+
+  
+
 
   std::shared_ptr<vis_utils::VisUtils> visPtr_;
   std::shared_ptr<traj_opt::TrajOpt> trajOptPtr_;
@@ -57,6 +66,17 @@ class Nodelet : public nodelet::Nodelet {
   void triger_callback(const geometry_msgs::PoseStampedConstPtr& msgPtr) {
     goal_ << msgPtr->pose.position.x, msgPtr->pose.position.y, 1.0;
     triger_received_ = true;
+    time_get_pub = ros::Time::now();
+  }
+
+  void now_position_cb(const nav_msgs::OdometryConstPtr& msg){
+    if (now_position_enable)
+    {
+      now_position.pose.pose.position.x = msg->pose.pose.position.x;
+      now_position.pose.pose.position.y = msg->pose.pose.position.y;
+      now_position.pose.pose.position.z = msg->pose.pose.position.z;
+      now_position_enable = false;
+    }
   }
 
   void debug_timer_callback(const ros::TimerEvent& event) {
@@ -72,9 +92,9 @@ class Nodelet : public nodelet::Nodelet {
     Eigen::Quaterniond land_q(1, 0, 0, 0);
 
     iniState.setZero();
-    iniState.col(0).x() = 0.0;
-    iniState.col(0).y() = 0.0;
-    iniState.col(0).z() = 2.0;
+    iniState.col(0).x() = now_position.pose.pose.position.x;
+    iniState.col(0).y() = now_position.pose.pose.position.y;
+    iniState.col(0).z() = now_position.pose.pose.position.z;
     iniState.col(1) = perching_v_;
     target_p = perching_p_;
     target_v = perching_v_;
@@ -145,7 +165,7 @@ class Nodelet : public nodelet::Nodelet {
 
     nav_msgs::Odometry msg;
     msg.header.frame_id = "world";
-    double dt = 0.001;
+    double dt = 0.01;
     Eigen::Quaterniond q_last;
     double max_omega = 0;
     for (double t = 0; t <= traj.getTotalDuration(); t += dt) {
@@ -171,10 +191,16 @@ class Nodelet : public nodelet::Nodelet {
       slap_odom.jerk.x = j.x();
       slap_odom.jerk.y = j.y();
       slap_odom.jerk.z = j.z();
-      ROS_INFO("Liming pub-------------------------------");
-
+      // ROS_INFO("Liming pub-------------------------------");
+      
       slap_odom_pub.publish(slap_odom);
-
+      if(pub_time)
+      {
+        time_pub_cmd = ros::Time::now();
+         ROS_INFO("time needed from pub the trigger:%.f", time_pub_cmd.toSec()-time_get_pub.toSec());
+         pub_time = false;
+      }
+     
       // std::cout << p.x() << " , " << p.z() << " , ";
 
       Eigen::Vector3d zb = thrust.normalized();
@@ -288,6 +314,7 @@ class Nodelet : public nodelet::Nodelet {
 
     triger_sub_ = nh.subscribe<geometry_msgs::PoseStamped>("triger", 10, &Nodelet::triger_callback, this, ros::TransportHints().tcpNoDelay());
 
+    now_position_sub = nh.subscribe<nav_msgs::Odometry>("/mocap/slapDrone", 10, &Nodelet::now_position_cb, this, ros::TransportHints().tcpNoDelay());
     // dawn
     slap_odom_pub = nh.advertise<quadrotor_msgs::PositionCommand>("/drone_commander/onboard_command", 10);
 
