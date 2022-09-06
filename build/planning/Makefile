@@ -168,6 +168,21 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
+planning/CMakeFiles/rpg_perch_nodelet.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/rpg_perch_nodelet.dir/rule
+.PHONY : planning/CMakeFiles/rpg_perch_nodelet.dir/rule
+
+# Convenience name for target.
+rpg_perch_nodelet: planning/CMakeFiles/rpg_perch_nodelet.dir/rule
+
+.PHONY : rpg_perch_nodelet
+
+# fast build rule for target.
+rpg_perch_nodelet/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/rpg_perch_nodelet.dir/build.make planning/CMakeFiles/rpg_perch_nodelet.dir/build
+.PHONY : rpg_perch_nodelet/fast
+
+# Convenience name for target.
 planning/CMakeFiles/planning_nodelet.dir/rule:
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/planning_nodelet.dir/rule
 .PHONY : planning/CMakeFiles/planning_nodelet.dir/rule
@@ -209,6 +224,33 @@ src/planning_nodelet.cpp.s:
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/planning_nodelet.dir/build.make planning/CMakeFiles/planning_nodelet.dir/src/planning_nodelet.cpp.s
 .PHONY : src/planning_nodelet.cpp.s
 
+src/rpg_perch_nodelet.o: src/rpg_perch_nodelet.cpp.o
+
+.PHONY : src/rpg_perch_nodelet.o
+
+# target to build an object file
+src/rpg_perch_nodelet.cpp.o:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/rpg_perch_nodelet.dir/build.make planning/CMakeFiles/rpg_perch_nodelet.dir/src/rpg_perch_nodelet.cpp.o
+.PHONY : src/rpg_perch_nodelet.cpp.o
+
+src/rpg_perch_nodelet.i: src/rpg_perch_nodelet.cpp.i
+
+.PHONY : src/rpg_perch_nodelet.i
+
+# target to preprocess a source file
+src/rpg_perch_nodelet.cpp.i:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/rpg_perch_nodelet.dir/build.make planning/CMakeFiles/rpg_perch_nodelet.dir/src/rpg_perch_nodelet.cpp.i
+.PHONY : src/rpg_perch_nodelet.cpp.i
+
+src/rpg_perch_nodelet.s: src/rpg_perch_nodelet.cpp.s
+
+.PHONY : src/rpg_perch_nodelet.s
+
+# target to generate assembly for a file
+src/rpg_perch_nodelet.cpp.s:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/rpg_perch_nodelet.dir/build.make planning/CMakeFiles/rpg_perch_nodelet.dir/src/rpg_perch_nodelet.cpp.s
+.PHONY : src/rpg_perch_nodelet.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -222,10 +264,14 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... test"
+	@echo "... rpg_perch_nodelet"
 	@echo "... planning_nodelet"
 	@echo "... src/planning_nodelet.o"
 	@echo "... src/planning_nodelet.i"
 	@echo "... src/planning_nodelet.s"
+	@echo "... src/rpg_perch_nodelet.o"
+	@echo "... src/rpg_perch_nodelet.i"
+	@echo "... src/rpg_perch_nodelet.s"
 .PHONY : help
 
 

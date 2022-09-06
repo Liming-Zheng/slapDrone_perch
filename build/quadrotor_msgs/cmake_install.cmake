@@ -52,6 +52,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
     "/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Odometry.msg"
     "/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PolynomialTrajectory.msg"
     "/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/LQRTrajectory.msg"
+    "/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/TrajectoryPoint.msg"
     )
 endif()
 

@@ -636,6 +636,19 @@ geometry_msgs_generate_messages_nodejs/fast:
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
 
 #=============================================================================
+# Target rules for targets named _quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint
+
+# Build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 _quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint/fast:
+	$(MAKE) -f quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint.dir/build.make quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint/fast
+
+#=============================================================================
 # Target rules for targets named geometry_msgs_generate_messages_cpp
 
 # Build rule for target.
@@ -1819,6 +1832,19 @@ traj_opt/fast:
 .PHONY : traj_opt/fast
 
 #=============================================================================
+# Target rules for targets named rpg_perch_nodelet
+
+# Build rule for target.
+rpg_perch_nodelet: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 rpg_perch_nodelet
+.PHONY : rpg_perch_nodelet
+
+# fast build rule for target.
+rpg_perch_nodelet/fast:
+	$(MAKE) -f planning/CMakeFiles/rpg_perch_nodelet.dir/build.make planning/CMakeFiles/rpg_perch_nodelet.dir/build
+.PHONY : rpg_perch_nodelet/fast
+
+#=============================================================================
 # Target rules for targets named planning_nodelet
 
 # Build rule for target.
@@ -1880,6 +1906,7 @@ help:
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"
@@ -1971,6 +1998,7 @@ help:
 	@echo "... std_srvs_generate_messages_nodejs"
 	@echo "... std_srvs_generate_messages_py"
 	@echo "... traj_opt"
+	@echo "... rpg_perch_nodelet"
 	@echo "... planning_nodelet"
 .PHONY : help
 

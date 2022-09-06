@@ -15,6 +15,7 @@
 
   <export>
     <nodelet plugin="${prefix}/nodelet_plugin.xml"/>
+    <!-- <nodelet plugin="${prefix}/rpg_nodelet_plugin.xml"/> -->
   </export>
 
 </package>

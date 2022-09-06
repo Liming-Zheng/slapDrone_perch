@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Serial.h"
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/StatusData.h"
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h"
   "CMakeFiles/quadrotor_msgs_generate_messages_cpp"
 )
 

@@ -90,6 +90,17 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # Special rule for the target install/local
 install/local: preinstall
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
@@ -101,17 +112,6 @@ install/local/fast: preinstall/fast
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
 	/usr/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
 .PHONY : install/local/fast
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/usr/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target test
 test:
@@ -571,6 +571,21 @@ geometry_msgs_generate_messages_nodejs: quadrotor_msgs/CMakeFiles/geometry_msgs_
 geometry_msgs_generate_messages_nodejs/fast:
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build.make quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/build
 .PHONY : geometry_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint.dir/rule
+.PHONY : quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint.dir/rule
+
+# Convenience name for target.
+_quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint: quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint.dir/rule
+
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint
+
+# fast build rule for target.
+_quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint.dir/build.make quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint.dir/build
+.PHONY : _quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint/fast
 
 # Convenience name for target.
 quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/rule:
@@ -1070,6 +1085,7 @@ help:
 	@echo "... install/strip"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... rebuild_cache"
 	@echo "... install/local"
 	@echo "... nav_msgs_generate_messages_eus"
 	@echo "... geometry_msgs_generate_messages_eus"
@@ -1085,7 +1101,6 @@ help:
 	@echo "... rosgraph_msgs_generate_messages_eus"
 	@echo "... roscpp_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_eus"
-	@echo "... rebuild_cache"
 	@echo "... rosgraph_msgs_generate_messages_nodejs"
 	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... actionlib_msgs_generate_messages_cpp"
@@ -1100,6 +1115,7 @@ help:
 	@echo "... std_msgs_generate_messages_eus"
 	@echo "... actionlib_msgs_generate_messages_nodejs"
 	@echo "... geometry_msgs_generate_messages_nodejs"
+	@echo "... _quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint"
 	@echo "... geometry_msgs_generate_messages_cpp"
 	@echo "... roscpp_generate_messages_lisp"
 	@echo "... rosgraph_msgs_generate_messages_py"

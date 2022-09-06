@@ -2,6 +2,7 @@
 "use strict";
 
 let PositionCommand = require('./PositionCommand.js');
+let TrajectoryPoint = require('./TrajectoryPoint.js');
 let PPROutputData = require('./PPROutputData.js');
 let LQRTrajectory = require('./LQRTrajectory.js');
 let AuxCommand = require('./AuxCommand.js');
@@ -17,6 +18,7 @@ let StatusData = require('./StatusData.js');
 
 module.exports = {
   PositionCommand: PositionCommand,
+  TrajectoryPoint: TrajectoryPoint,
   PPROutputData: PPROutputData,
   LQRTrajectory: LQRTrajectory,
   AuxCommand: AuxCommand,

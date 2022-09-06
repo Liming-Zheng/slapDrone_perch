@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Serial.py"
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_StatusData.py"
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TRPYCommand.py"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TrajectoryPoint.py"
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/__init__.py"
   "CMakeFiles/quadrotor_msgs_generate_messages_py"
 )

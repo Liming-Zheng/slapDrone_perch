@@ -11,3 +11,4 @@ from ._SO3Command import *
 from ._Serial import *
 from ._StatusData import *
 from ._TRPYCommand import *
+from ._TrajectoryPoint import *

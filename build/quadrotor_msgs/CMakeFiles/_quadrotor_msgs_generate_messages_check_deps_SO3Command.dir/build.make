@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/build
 include quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/progress.make
 
 quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py quadrotor_msgs /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/SO3Command.msg geometry_msgs/Vector3:geometry_msgs/Quaternion:std_msgs/Header:quadrotor_msgs/AuxCommand
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py quadrotor_msgs /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/SO3Command.msg std_msgs/Header:quadrotor_msgs/AuxCommand:geometry_msgs/Vector3:geometry_msgs/Quaternion
 
 _quadrotor_msgs_generate_messages_check_deps_SO3Command: quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command
 _quadrotor_msgs_generate_messages_check_deps_SO3Command: quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_SO3Command.dir/build.make

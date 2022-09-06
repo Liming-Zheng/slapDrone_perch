@@ -564,6 +564,7 @@ TrajOpt::TrajOpt(ros::NodeHandle& nh) {
   nh.getParam("K", K_);
   // load dynamic paramters
   nh.getParam("vmax", vmax_);
+  ROS_INFO("_____tamade______tamade_____shenmejiaozuo__jingxi_______");
   nh.getParam("amax", amax_);
   nh.getParam("thrust_max", thrust_max_);
   nh.getParam("thrust_min", thrust_min_);

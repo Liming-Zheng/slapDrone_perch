@@ -33,4 +33,6 @@
     (:file "_package_StatusData" :depends-on ("_package"))
     (:file "TRPYCommand" :depends-on ("_package_TRPYCommand"))
     (:file "_package_TRPYCommand" :depends-on ("_package"))
+    (:file "TrajectoryPoint" :depends-on ("_package_TrajectoryPoint"))
+    (:file "_package_TrajectoryPoint" :depends-on ("_package"))
   ))

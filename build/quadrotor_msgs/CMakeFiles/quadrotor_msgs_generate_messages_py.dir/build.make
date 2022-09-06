@@ -66,6 +66,7 @@ quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py: /home/dawn/Drone/
 quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py
 quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PolynomialTrajectory.py
 quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_LQRTrajectory.py
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TrajectoryPoint.py
 quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/__init__.py
 
 
@@ -86,17 +87,17 @@ quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py: /home/dawn/Drone/
 
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_OutputData.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_OutputData.py: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/OutputData.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_OutputData.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_OutputData.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_OutputData.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_OutputData.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Python from MSG quadrotor_msgs/OutputData"
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/OutputData.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg
 
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PositionCommand.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PositionCommand.py: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PositionCommand.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PositionCommand.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PositionCommand.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PositionCommand.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PositionCommand.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PositionCommand.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Python from MSG quadrotor_msgs/PositionCommand"
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PositionCommand.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg
 
@@ -114,10 +115,10 @@ quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py: /home/dawn/Drone/
 
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_SO3Command.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_SO3Command.py: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/SO3Command.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_SO3Command.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_SO3Command.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_SO3Command.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_SO3Command.py: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/AuxCommand.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_SO3Command.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_SO3Command.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Python from MSG quadrotor_msgs/SO3Command"
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/SO3Command.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg
 
@@ -136,15 +137,15 @@ quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py: /home/dawn/Drone/
 
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Odometry.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/geometry_msgs/msg/TwistWithCovariance.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/nav_msgs/msg/Odometry.msg
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/geometry_msgs/msg/TwistWithCovariance.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py: /opt/ros/noetic/share/nav_msgs/msg/Odometry.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Python from MSG quadrotor_msgs/Odometry"
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Odometry.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg
 
@@ -160,6 +161,17 @@ quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py: /home/dawn/Drone/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Python from MSG quadrotor_msgs/LQRTrajectory"
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/LQRTrajectory.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg
 
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TrajectoryPoint.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TrajectoryPoint.py: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/TrajectoryPoint.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TrajectoryPoint.py: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TrajectoryPoint.py: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TrajectoryPoint.py: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TrajectoryPoint.py: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TrajectoryPoint.py: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TrajectoryPoint.py: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Python from MSG quadrotor_msgs/TrajectoryPoint"
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/TrajectoryPoint.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg
+
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/__init__.py: /opt/ros/noetic/lib/genpy/genmsg_py.py
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/__init__.py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_AuxCommand.py
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/__init__.py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Corrections.py
@@ -174,7 +186,8 @@ quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py: /home/dawn/Drone/
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/__init__.py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/__init__.py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PolynomialTrajectory.py
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/__init__.py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_LQRTrajectory.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Python msg __init__.py for quadrotor_msgs"
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/__init__.py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TrajectoryPoint.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Generating Python msg __init__.py for quadrotor_msgs"
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genpy/cmake/../../../lib/genpy/genmsg_py.py -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg --initpy
 
 quadrotor_msgs_generate_messages_py: quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py
@@ -191,6 +204,7 @@ quadrotor_msgs_generate_messages_py: /home/dawn/Drone/SlapDrone/slapDrone_perch/
 quadrotor_msgs_generate_messages_py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_Odometry.py
 quadrotor_msgs_generate_messages_py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_PolynomialTrajectory.py
 quadrotor_msgs_generate_messages_py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_LQRTrajectory.py
+quadrotor_msgs_generate_messages_py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/_TrajectoryPoint.py
 quadrotor_msgs_generate_messages_py: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages/quadrotor_msgs/msg/__init__.py
 quadrotor_msgs_generate_messages_py: quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_py.dir/build.make
 

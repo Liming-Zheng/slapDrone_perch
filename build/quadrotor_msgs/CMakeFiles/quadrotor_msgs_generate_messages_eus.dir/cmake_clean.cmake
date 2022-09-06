@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/roseus/ros/quadrotor_msgs/msg/Serial.l"
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/roseus/ros/quadrotor_msgs/msg/StatusData.l"
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/roseus/ros/quadrotor_msgs/msg/TRPYCommand.l"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/roseus/ros/quadrotor_msgs/msg/TrajectoryPoint.l"
   "CMakeFiles/quadrotor_msgs_generate_messages_eus"
 )
 

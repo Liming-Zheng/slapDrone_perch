@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Serial.js"
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/StatusData.js"
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/TRPYCommand.js"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/TrajectoryPoint.js"
   "CMakeFiles/quadrotor_msgs_generate_messages_nodejs"
 )
 

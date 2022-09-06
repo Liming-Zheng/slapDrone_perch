@@ -376,6 +376,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "quadrotor_msgs/CMakeFiles/std_msgs_generate_messages_eus.dir/DependInfo.cmake"
   "quadrotor_msgs/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
   "quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_nodejs.dir/DependInfo.cmake"
+  "quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_TrajectoryPoint.dir/DependInfo.cmake"
   "quadrotor_msgs/CMakeFiles/geometry_msgs_generate_messages_cpp.dir/DependInfo.cmake"
   "quadrotor_msgs/CMakeFiles/roscpp_generate_messages_lisp.dir/DependInfo.cmake"
   "quadrotor_msgs/CMakeFiles/rosgraph_msgs_generate_messages_py.dir/DependInfo.cmake"
@@ -467,5 +468,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "vis_utils/CMakeFiles/std_srvs_generate_messages_nodejs.dir/DependInfo.cmake"
   "vis_utils/CMakeFiles/std_srvs_generate_messages_py.dir/DependInfo.cmake"
   "traj_opt/CMakeFiles/traj_opt.dir/DependInfo.cmake"
+  "planning/CMakeFiles/rpg_perch_nodelet.dir/DependInfo.cmake"
   "planning/CMakeFiles/planning_nodelet.dir/DependInfo.cmake"
   )

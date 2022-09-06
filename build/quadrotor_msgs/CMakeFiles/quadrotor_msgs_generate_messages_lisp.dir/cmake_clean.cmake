@@ -12,6 +12,7 @@ file(REMOVE_RECURSE
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/common-lisp/ros/quadrotor_msgs/msg/Serial.lisp"
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/common-lisp/ros/quadrotor_msgs/msg/StatusData.lisp"
   "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/common-lisp/ros/quadrotor_msgs/msg/TRPYCommand.lisp"
+  "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/common-lisp/ros/quadrotor_msgs/msg/TrajectoryPoint.lisp"
   "CMakeFiles/quadrotor_msgs_generate_messages_lisp"
 )
 

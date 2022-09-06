@@ -1,0 +1,5 @@
+<library path="lib/librpg_perch_nodelet">
+  <class name="rpg_planning/rgb_Nodelet" type="rpg_planning::rpg_Nodelet" base_class_type="nodelet::Nodelet">
+    <description></description>
+  </class>
+</library>

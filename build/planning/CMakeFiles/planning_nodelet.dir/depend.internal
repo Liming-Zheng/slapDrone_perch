@@ -3,6 +3,7 @@
 
 planning/CMakeFiles/planning_nodelet.dir/src/planning_nodelet.cpp.o
  /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h
+ /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h
  /home/dawn/Drone/SlapDrone/slapDrone_perch/src/planning/src/planning_nodelet.cpp
  /home/dawn/Drone/SlapDrone/slapDrone_perch/src/traj_opt/include/traj_opt/minco.hpp
  /home/dawn/Drone/SlapDrone/slapDrone_perch/src/traj_opt/include/traj_opt/poly_traj_utils.hpp

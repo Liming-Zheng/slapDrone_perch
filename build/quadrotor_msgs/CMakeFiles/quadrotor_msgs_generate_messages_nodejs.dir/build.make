@@ -66,6 +66,7 @@ quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs: /home/dawn/Dr
 quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js
 quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/PolynomialTrajectory.js
 quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/LQRTrajectory.js
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/TrajectoryPoint.js
 
 
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/AuxCommand.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
@@ -85,17 +86,17 @@ quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs: /home/dawn/Dr
 
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/OutputData.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/OutputData.js: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/OutputData.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/OutputData.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/OutputData.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/OutputData.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/OutputData.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating Javascript code from quadrotor_msgs/OutputData.msg"
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/OutputData.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg
 
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/PositionCommand.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/PositionCommand.js: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PositionCommand.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/PositionCommand.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/PositionCommand.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/PositionCommand.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/PositionCommand.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/PositionCommand.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating Javascript code from quadrotor_msgs/PositionCommand.msg"
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PositionCommand.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg
 
@@ -113,10 +114,10 @@ quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs: /home/dawn/Dr
 
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/SO3Command.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/SO3Command.js: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/SO3Command.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/SO3Command.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/SO3Command.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/SO3Command.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/SO3Command.js: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/AuxCommand.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/SO3Command.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/SO3Command.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating Javascript code from quadrotor_msgs/SO3Command.msg"
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/SO3Command.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg
 
@@ -135,15 +136,15 @@ quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs: /home/dawn/Dr
 
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Odometry.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/geometry_msgs/msg/TwistWithCovariance.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/nav_msgs/msg/Odometry.msg
 /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/geometry_msgs/msg/TwistWithCovariance.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js: /opt/ros/noetic/share/nav_msgs/msg/Odometry.msg
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating Javascript code from quadrotor_msgs/Odometry.msg"
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Odometry.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg
 
@@ -159,6 +160,17 @@ quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs: /home/dawn/Dr
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating Javascript code from quadrotor_msgs/LQRTrajectory.msg"
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/LQRTrajectory.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg
 
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/TrajectoryPoint.js: /opt/ros/noetic/lib/gennodejs/gen_nodejs.py
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/TrajectoryPoint.js: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/TrajectoryPoint.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/TrajectoryPoint.js: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/TrajectoryPoint.js: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/TrajectoryPoint.js: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/TrajectoryPoint.js: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/TrajectoryPoint.js: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/TrajectoryPoint.js: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating Javascript code from quadrotor_msgs/TrajectoryPoint.msg"
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gennodejs/cmake/../../../lib/gennodejs/gen_nodejs.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/TrajectoryPoint.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg
+
 quadrotor_msgs_generate_messages_nodejs: quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs
 quadrotor_msgs_generate_messages_nodejs: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/AuxCommand.js
 quadrotor_msgs_generate_messages_nodejs: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Corrections.js
@@ -173,6 +185,7 @@ quadrotor_msgs_generate_messages_nodejs: /home/dawn/Drone/SlapDrone/slapDrone_pe
 quadrotor_msgs_generate_messages_nodejs: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/Odometry.js
 quadrotor_msgs_generate_messages_nodejs: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/PolynomialTrajectory.js
 quadrotor_msgs_generate_messages_nodejs: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/LQRTrajectory.js
+quadrotor_msgs_generate_messages_nodejs: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/share/gennodejs/ros/quadrotor_msgs/msg/TrajectoryPoint.js
 quadrotor_msgs_generate_messages_nodejs: quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_nodejs.dir/build.make
 
 .PHONY : quadrotor_msgs_generate_messages_nodejs

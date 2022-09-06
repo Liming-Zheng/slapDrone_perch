@@ -39,3 +39,16 @@ target_link_libraries(${PROJECT_NAME}_nodelet
 add_dependencies(${PROJECT_NAME}_nodelet
   ${catkin_EXPORTED_TARGETS}
 )
+
+# rpg planning node
+add_library(rpg_perch_nodelet
+src/rpg_perch_nodelet.cpp
+)
+
+target_link_libraries(rpg_perch_nodelet
+  ${catkin_LIBRARIES}
+)
+
+add_dependencies(rpg_perch_nodelet
+  ${catkin_EXPORTED_TARGETS}
+)

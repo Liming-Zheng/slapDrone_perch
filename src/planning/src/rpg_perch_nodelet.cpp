@@ -1,4 +1,3 @@
-
 #include <geometry_msgs/PoseStamped.h>
 #include <nav_msgs/Odometry.h>
 #include <nodelet/nodelet.h>
@@ -6,20 +5,19 @@
 #include <ros/ros.h>
 #include <std_msgs/Empty.h>
 #include <traj_opt/traj_opt.h>
-#include <quadrotor_msgs/PositionCommand.h>
+// #include <quadrotor_msgs/PositionCommand.h>
 #include <quadrotor_msgs/TrajectoryPoint.h>
-
 
 #include <Eigen/Core>
 #include <atomic>
 #include <thread>
 #include <vis_utils/vis_utils.hpp>
 
-namespace planning {
+namespace rpg_planning {
 
 Eigen::IOFormat CommaInitFmt(Eigen::StreamPrecision, Eigen::DontAlignCols, ", ", ", ", "", "", " << ", ";");
 
-class Nodelet : public nodelet::Nodelet {
+class rpg_Nodelet : public nodelet::Nodelet {
  private:
   std::thread initThread_;
   ros::Subscriber triger_sub_;
@@ -41,7 +39,7 @@ class Nodelet : public nodelet::Nodelet {
   std::shared_ptr<traj_opt::TrajOpt> trajOptPtr_;
 
   // dawn pub the cmd topic to slapDrone_base
-  quadrotor_msgs::PositionCommand slap_odom;
+  quadrotor_msgs::TrajectoryPoint slap_odom;
 
   // NOTE planning or fake target
   bool target_ = false;
@@ -182,19 +180,31 @@ class Nodelet : public nodelet::Nodelet {
       Eigen::Vector3d thrust = a - g;
 
       //dawn publish the trajectory msg to px4control
-      slap_odom.position.x = p.x();
-      slap_odom.position.y = p.y();
-      slap_odom.position.z = p.z();
-      slap_odom.velocity.x = dawn_v.x();
-      slap_odom.velocity.y = dawn_v.y();
-      slap_odom.velocity.z = dawn_v.z();
-      slap_odom.acceleration.x = a.x();
-      slap_odom.acceleration.y = a.y();
-      slap_odom.acceleration.z = a.z();
-      slap_odom.jerk.x = j.x();
-      slap_odom.jerk.y = j.y();
-      slap_odom.jerk.z = j.z();
+      // slap_odom.position.x = p.x();
+      // slap_odom.position.y = p.y();
+      // slap_odom.position.z = p.z();
+      // slap_odom.velocity.x = dawn_v.x();
+      // slap_odom.velocity.y = dawn_v.y();
+      // slap_odom.velocity.z = dawn_v.z();
+      // slap_odom.acceleration.x = a.x();
+      // slap_odom.acceleration.y = a.y();
+      // slap_odom.acceleration.z = a.z();
+      // slap_odom.jerk.x = j.x();
+      // slap_odom.jerk.y = j.y();
+      // slap_odom.jerk.z = j.z();
       // ROS_INFO("Liming pub-------------------------------");
+      slap_odom.pose.position.x = p.x();
+      slap_odom.pose.position.y = p.y();
+      slap_odom.pose.position.z = p.z();
+      slap_odom.velocity.linear.x = dawn_v.x();
+      slap_odom.velocity.linear.y = dawn_v.y();
+      slap_odom.velocity.linear.z = dawn_v.z();
+      slap_odom.acceleration.linear.x = a.x();
+      slap_odom.acceleration.linear.y = a.y();
+      slap_odom.acceleration.linear.z = a.z();
+      slap_odom.jerk.linear.x = j.x();
+      slap_odom.jerk.linear.y = j.y();
+      slap_odom.jerk.linear.z = j.z();
       
       slap_odom_pub.publish(slap_odom);
       if(pub_time)
@@ -313,13 +323,14 @@ class Nodelet : public nodelet::Nodelet {
     visPtr_ = std::make_shared<vis_utils::VisUtils>(nh);
     trajOptPtr_ = std::make_shared<traj_opt::TrajOpt>(nh);
 
-    plan_timer_ = nh.createTimer(ros::Duration(1.0 / plan_hz_), &Nodelet::debug_timer_callback, this);
+    plan_timer_ = nh.createTimer(ros::Duration(1.0 / plan_hz_), &rpg_Nodelet::debug_timer_callback, this);
 
-    triger_sub_ = nh.subscribe<geometry_msgs::PoseStamped>("triger", 10, &Nodelet::triger_callback, this, ros::TransportHints().tcpNoDelay());
+    triger_sub_ = nh.subscribe<geometry_msgs::PoseStamped>("triger", 10, &rpg_Nodelet::triger_callback, this, ros::TransportHints().tcpNoDelay());
 
-    now_position_sub = nh.subscribe<nav_msgs::Odometry>("/mocap/slapDrone", 10, &Nodelet::now_position_cb, this, ros::TransportHints().tcpNoDelay());
+    now_position_sub = nh.subscribe<nav_msgs::Odometry>("/mocap/slapDrone", 10, &rpg_Nodelet::now_position_cb, this, ros::TransportHints().tcpNoDelay());
     // dawn
-    slap_odom_pub = nh.advertise<quadrotor_msgs::PositionCommand>("/drone_commander/onboard_command", 10);
+    // slap_odom_pub = nh.advertise<quadrotor_msgs::PositionCommand>("/drone_commander/onboard_command", 10);
+    slap_odom_pub = nh.advertise<quadrotor_msgs::TrajectoryPoint>("slapDrone/autopilot/reference_state", 1);
 
     ROS_WARN("Planning node initialized!");
   }
@@ -327,7 +338,7 @@ class Nodelet : public nodelet::Nodelet {
  public:
   void onInit(void) {
     ros::NodeHandle nh(getMTPrivateNodeHandle());
-    initThread_ = std::thread(std::bind(&Nodelet::init, this, nh));
+    initThread_ = std::thread(std::bind(&rpg_Nodelet::init, this, nh));
   }
   EIGEN_MAKE_ALIGNED_OPERATOR_NEW
 };
@@ -335,4 +346,4 @@ class Nodelet : public nodelet::Nodelet {
 }  // namespace planning
 
 #include <pluginlib/class_list_macros.h>
-PLUGINLIB_EXPORT_CLASS(planning::Nodelet, nodelet::Nodelet);
+PLUGINLIB_EXPORT_CLASS(rpg_planning::rpg_Nodelet, nodelet::Nodelet);
