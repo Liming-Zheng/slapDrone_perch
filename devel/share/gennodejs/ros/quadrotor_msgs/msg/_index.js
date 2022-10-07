@@ -11,6 +11,7 @@ let Odometry = require('./Odometry.js');
 let TRPYCommand = require('./TRPYCommand.js');
 let Corrections = require('./Corrections.js');
 let Gains = require('./Gains.js');
+let Trajectory = require('./Trajectory.js');
 let OutputData = require('./OutputData.js');
 let Serial = require('./Serial.js');
 let SO3Command = require('./SO3Command.js');
@@ -27,6 +28,7 @@ module.exports = {
   TRPYCommand: TRPYCommand,
   Corrections: Corrections,
   Gains: Gains,
+  Trajectory: Trajectory,
   OutputData: OutputData,
   Serial: Serial,
   SO3Command: SO3Command,

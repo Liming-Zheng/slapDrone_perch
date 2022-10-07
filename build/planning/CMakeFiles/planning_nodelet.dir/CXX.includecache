@@ -11,7 +11,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -37,7 +37,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -84,6 +84,8 @@ Eigen/Core
 atomic
 -
 thread
+-
+cmath
 -
 vis_utils/vis_utils.hpp
 -

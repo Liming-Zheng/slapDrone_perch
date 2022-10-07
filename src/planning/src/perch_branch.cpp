@@ -8,12 +8,12 @@
 #include <traj_opt/traj_opt.h>
 #include <quadrotor_msgs/PositionCommand.h>
 #include <quadrotor_msgs/TrajectoryPoint.h>
+#include <mavros_msgs/RCIn.h>
 
 
 #include <Eigen/Core>
 #include <atomic>
 #include <thread>
-#include <cmath>
 #include <vis_utils/vis_utils.hpp>
 
 namespace planning {
@@ -28,24 +28,25 @@ class Nodelet : public nodelet::Nodelet {
 
   // dawn   
   ros::Publisher slap_odom_pub;
-  ros::Publisher slap_rpg_odom_pub;
   ros::Subscriber now_position_sub;
-  ros::Subscriber branch_pose_sub;
+  ros::Subscriber realBranch_sub;
+  ros::Subscriber perchStart_rc_sub;
+
   ros::Time time_get_pub;
   ros::Time time_pub_cmd;
   bool pub_time = true;
-  nav_msgs::Odometry now_position;
-  nav_msgs::Odometry branch_pose;
+  nav_msgs::Odometry now_position;  
+  nav_msgs::Odometry realBranch_pose;  
   bool now_position_enable = true;
-  bool rpg_cmd_;
-  double yaw_right_distance_;
 
-  // dawn pub the cmd topic to slapDrone_base
-  quadrotor_msgs::PositionCommand slap_odom;
-  quadrotor_msgs::TrajectoryPoint slap_rpg_odom;
+  
+
 
   std::shared_ptr<vis_utils::VisUtils> visPtr_;
   std::shared_ptr<traj_opt::TrajOpt> trajOptPtr_;
+
+  // dawn pub the cmd topic to slapDrone_base
+  quadrotor_msgs::PositionCommand slap_odom;
 
   // NOTE planning or fake target
   bool target_ = false;
@@ -70,30 +71,6 @@ class Nodelet : public nodelet::Nodelet {
 
   std::atomic_bool triger_received_ = ATOMIC_VAR_INIT(false);
 
-  // calculate target yaw
-  double cal_terminal_yaw()
-  {
-      //TODO: need to know how to calculate the terminal yaw and quaternion
-
-    return 0.0;
-  }
-
-
-  // get the heading of Drone
-  double cal_slap_yaw(Eigen::Vector3d target_p, Eigen::Vector3d position_now, double target_yaw)
-  {
-    double d_x = position_now.x()-target_p.x();
-    double d_y = position_now.y()-target_p.y();
-    double distance = sqrt(d_x*d_x + d_y*d_y);
-    if (distance > yaw_right_distance_)
-    {
-      return atan2(target_p.x()-position_now.x(), target_p.y()-position_now.y());
-    }
-    else{
-      return target_yaw;
-    }
-  }
-
   void triger_callback(const geometry_msgs::PoseStampedConstPtr& msgPtr) {
     goal_ << msgPtr->pose.position.x, msgPtr->pose.position.y, 1.0;
     triger_received_ = true;
@@ -110,9 +87,19 @@ class Nodelet : public nodelet::Nodelet {
     }
   }
 
-  void branch_pose_cb(const nav_msgs::OdometryConstPtr& msg){
-   
-    branch_pose = *msg;
+  // void perchStart_rc_cb(const mavros_msgs::RCInConstPtr& msg){
+
+  // }
+
+  void realBranch_cb(const nav_msgs::OdometryConstPtr& msg){
+    realBranch_pose = *msg;
+
+    // calculate the perch position
+    perching_p_.x() = msg->pose.pose.position.x;
+    perching_p_.y() = msg->pose.pose.position.y;
+    perching_p_.z() = msg->pose.pose.position.z;
+    
+    
   }
 
   void debug_timer_callback(const ros::TimerEvent& event) {
@@ -215,88 +202,21 @@ class Nodelet : public nodelet::Nodelet {
       Eigen::Vector3d thrust = a - g;
 
       //dawn publish the trajectory msg to px4control
-      if (!rpg_cmd_)
-      {
-        slap_odom.header.stamp = ros::Time::now();
-        slap_odom.header.frame_id = "world";
-
-        slap_odom.position.x = p.x();
-        slap_odom.position.y = p.y();
-        slap_odom.position.z = p.z();
-        slap_odom.velocity.x = dawn_v.x();
-        slap_odom.velocity.y = dawn_v.y();
-        slap_odom.velocity.z = dawn_v.z();
-        slap_odom.acceleration.x = a.x();
-        slap_odom.acceleration.y = a.y();
-        slap_odom.acceleration.z = a.z();
-        slap_odom.jerk.x = j.x();
-        slap_odom.jerk.y = j.y();
-        slap_odom.jerk.z = j.z();
-        // ROS_INFO("Liming pub-------------------------------");
+      slap_odom.position.x = p.x();
+      slap_odom.position.y = p.y();
+      slap_odom.position.z = p.z();
+      slap_odom.velocity.x = dawn_v.x();
+      slap_odom.velocity.y = dawn_v.y();
+      slap_odom.velocity.z = dawn_v.z();
+      slap_odom.acceleration.x = a.x();
+      slap_odom.acceleration.y = a.y();
+      slap_odom.acceleration.z = a.z();
+      slap_odom.jerk.x = j.x();
+      slap_odom.jerk.y = j.y();
+      slap_odom.jerk.z = j.z();
+      // ROS_INFO("Liming pub-------------------------------");
       
-        slap_odom_pub.publish(slap_odom);
-      }
-      else{
-        ros::Time time_now = ros::Time::now();
-        double t_cur = (time_now - time_get_pub).toSec();
-
-        Eigen::Vector3d pos(Eigen::Vector3d::Zero()), vel(Eigen::Vector3d::Zero()), acc(Eigen::Vector3d::Zero()),
-                    jerk(Eigen::Vector3d::Zero()), pos_f;
-        std::pair<double, double> yaw_yawdot(0, 0);
-
-        static ros::Time time_last = ros::Time::now();
-        Eigen::AngleAxisd R_ego_ab = Eigen::AngleAxisd(0.0 * M_PI, Eigen::Vector3d::UnitZ());
-
-        slap_rpg_odom.header.stamp = time_now;
-        slap_rpg_odom.header.frame_id = "world";
-
-        slap_rpg_odom.pose.position.x = p.x();
-        slap_rpg_odom.pose.position.y = p.y();
-        slap_rpg_odom.pose.position.z = p.z();
-        slap_rpg_odom.velocity.linear.x = dawn_v.x();
-        slap_rpg_odom.velocity.linear.y = dawn_v.y();
-        slap_rpg_odom.velocity.linear.z = dawn_v.z();
-        slap_rpg_odom.acceleration.linear.x = a.x();
-        slap_rpg_odom.acceleration.linear.y = a.y();
-        slap_rpg_odom.acceleration.linear.z = a.z();
-        slap_rpg_odom.jerk.linear.x = j.x();
-        slap_rpg_odom.jerk.linear.y = j.y();
-        slap_rpg_odom.jerk.linear.z = j.z();
-
-        slap_rpg_odom.heading = cal_slap_yaw(target_p, p, cal_terminal_yaw());
-
-        Eigen::Vector3d I_eZ_I(0.0, 0.0, 1.0);
-        Eigen::Quaterniond quatDes = Eigen::Quaterniond::FromTwoVectors(
-          I_eZ_I, acc + Eigen::Vector3d(0.0, 0.0, 9.81));
-        Eigen::Quaternion<double> q_heading =
-          Eigen::Quaternion<double>(Eigen::AngleAxis<double>( yaw_yawdot.first, Eigen::Matrix<double, 3, 1>::UnitZ()));
-        Eigen::Quaternion<double> q_orientation = quatDes * q_heading;
-        slap_rpg_odom.pose.orientation.x = q_orientation.x();
-        slap_rpg_odom.pose.orientation.y = q_orientation.y();
-        slap_rpg_odom.pose.orientation.z = q_orientation.z();
-        slap_rpg_odom.pose.orientation.w = q_orientation.w();
-
-        double time_step = 0.01;
-        Eigen::Vector3d acc1 = acc + Eigen::Vector3d(0.0, 0.0, 9.81);
-        Eigen::Vector3d acc2 = acc + Eigen::Vector3d(0.0, 0.0, 9.81) +
-        time_step * jerk;  // should be acceleration at next trajectory point
-        acc1.normalize();
-        acc2.normalize();
-
-        Eigen::Vector3d crossProd = acc1.cross(acc2);  // direction of omega, in inertial axes
-        Eigen::Vector3d bodyrates_wf = Eigen::Vector3d(0, 0, 0);
-        if (crossProd.norm() > 0.0) {
-          bodyrates_wf = std::acos(acc1.dot(acc2)) / time_step * crossProd / crossProd.norm();
-        }
-        // rotate angular rates to bodyframe
-        Eigen::Vector3d angular_rate = q_orientation.inverse() * bodyrates_wf;
-        slap_rpg_odom.velocity.angular.x = angular_rate.x();
-        slap_rpg_odom.velocity.angular.y = angular_rate.y();
-        slap_rpg_odom.velocity.angular.z = angular_rate.z();
-
-        slap_rpg_odom_pub.publish(slap_rpg_odom);
-      }
-      
+      slap_odom_pub.publish(slap_odom);
       if(pub_time)
       {
         time_pub_cmd = ros::Time::now();
@@ -399,9 +319,9 @@ class Nodelet : public nodelet::Nodelet {
     nh.getParam("replan", debug_replan_);
 
     // NOTE once
-    nh.getParam("perching_px", perching_p_.x());
-    nh.getParam("perching_py", perching_p_.y());
-    nh.getParam("perching_pz", perching_p_.z());
+    // nh.getParam("perching_px", perching_p_.x());
+    // nh.getParam("perching_py", perching_p_.y());
+    // nh.getParam("perching_pz", perching_p_.z());
     nh.getParam("perching_vx", perching_v_.x());
     nh.getParam("perching_vy", perching_v_.y());
     nh.getParam("perching_vz", perching_v_.z());
@@ -409,8 +329,6 @@ class Nodelet : public nodelet::Nodelet {
     nh.getParam("perching_axis_y", perching_axis_.y());
     nh.getParam("perching_axis_z", perching_axis_.z());
     nh.getParam("perching_theta", perching_theta_);
-    nh.getParam("rpg_cmd", rpg_cmd_);
-    nh.getParam("yaw_right_distance", yaw_right_distance_);
 
     visPtr_ = std::make_shared<vis_utils::VisUtils>(nh);
     trajOptPtr_ = std::make_shared<traj_opt::TrajOpt>(nh);
@@ -420,12 +338,11 @@ class Nodelet : public nodelet::Nodelet {
     triger_sub_ = nh.subscribe<geometry_msgs::PoseStamped>("triger", 10, &Nodelet::triger_callback, this, ros::TransportHints().tcpNoDelay());
 
     now_position_sub = nh.subscribe<nav_msgs::Odometry>("/mocap/slapDrone", 10, &Nodelet::now_position_cb, this, ros::TransportHints().tcpNoDelay());
-
-    branch_pose_sub = nh.subscribe<nav_msgs::Odometry>("/mocap/realBranch", 10, &Nodelet::branch_pose_cb, this, ros::TransportHints().tcpNoDelay());
-
     // dawn
+    realBranch_sub = nh.subscribe<nav_msgs::Odometry>("/mocap/realBranch", 10, &Nodelet::realBranch_cb, this, ros::TransportHints().tcpNoDelay());
+    // perchStart_rc_sub = nh.subscribe<mavros_msgs::RCIn>("/mavros/rc/in", 10, &Nodelet::perchStart_rc_cb, this, ros::TransportHints().tcpNoDelay())
+
     slap_odom_pub = nh.advertise<quadrotor_msgs::PositionCommand>("/drone_commander/onboard_command", 10);
-    slap_rpg_odom_pub = nh.advertise<quadrotor_msgs::TrajectoryPoint>("/slapDrone/autopilot/reference_state", 10);
 
     ROS_WARN("Planning node initialized!");
   }

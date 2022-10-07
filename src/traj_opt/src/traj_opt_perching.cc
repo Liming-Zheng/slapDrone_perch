@@ -303,12 +303,10 @@ bool TrajOpt::generate_traj(const Eigen::MatrixXd& iniState,
     car_p: 目标的位置
     car_v: 目标的速度
     land_q： 计划的最终角度
-    
-
   */
   N_ = N;
-  dim_t_ = 1;
-  dim_p_ = N_ - 1;
+  dim_t_ = 1; // 时间维度
+  dim_p_ = N_ - 1;  // 位置维度
   x_ = new double[dim_t_ + 3 * dim_p_ + 1 + 2];  // 1: tail thrust; 2: tail vt
   double& t = x_[0];
   Eigen::Map<Eigen::MatrixXd> P(x_ + dim_t_, 3, dim_p_);
@@ -432,8 +430,8 @@ bool TrajOpt::generate_traj(const Eigen::MatrixXd& iniState,
   Eigen::Vector3d tailV;
   forwardTailV(vt, tailV);
   Eigen::MatrixXd tailS(3, 4);
-  tailS.col(0) = car_p_ + car_v_ * T + tail_q_v_ * robot_l_;
-  tailS.col(1) = tailV;
+  tailS.col(0) = car_p_ + car_v_ * T + tail_q_v_ * robot_l_;// 最终位置
+  tailS.col(1) = tailV; //最终速度
   tailS.col(2) = forward_thrust(tail_f) * tail_q_v_ + g_;
   tailS.col(3).setZero();
   // std::cout << "tail thrust: " << forward_thrust(tail_f) << std::endl;
@@ -564,7 +562,7 @@ TrajOpt::TrajOpt(ros::NodeHandle& nh) {
   nh.getParam("K", K_);
   // load dynamic paramters
   nh.getParam("vmax", vmax_);
-  ROS_INFO("_____tamade______tamade_____shenmejiaozuo__jingxi_______");
+  //ROS_INFO("_____tamade______tamade_____shenmejiaozuo__jingxi_______");
   nh.getParam("amax", amax_);
   nh.getParam("thrust_max", thrust_max_);
   nh.getParam("thrust_min", thrust_min_);

@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -81,25 +81,25 @@ struct PolynomialTrajectory_
    typedef double _final_yaw_type;
   _final_yaw_type final_yaw;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _coef_x_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _coef_x_type;
   _coef_x_type coef_x;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _coef_y_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _coef_y_type;
   _coef_y_type coef_y;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _coef_z_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _coef_z_type;
   _coef_z_type coef_z;
 
-   typedef std::vector<double, typename ContainerAllocator::template rebind<double>::other >  _time_type;
+   typedef std::vector<double, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<double>> _time_type;
   _time_type time;
 
    typedef double _mag_coeff_type;
   _mag_coeff_type mag_coeff;
 
-   typedef std::vector<uint32_t, typename ContainerAllocator::template rebind<uint32_t>::other >  _order_type;
+   typedef std::vector<uint32_t, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<uint32_t>> _order_type;
   _order_type order;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _debug_info_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _debug_info_type;
   _debug_info_type debug_info;
 
 
@@ -401,7 +401,7 @@ struct Printer< ::quadrotor_msgs::PolynomialTrajectory_<ContainerAllocator> >
       Printer<uint32_t>::stream(s, indent + "  ", v.order[i]);
     }
     s << indent << "debug_info: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.debug_info);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.debug_info);
   }
 };
 

@@ -8,7 +8,7 @@
 
 #include <string>
 #include <vector>
-#include <map>
+#include <memory>
 
 #include <ros/types.h>
 #include <ros/serialization.h>
@@ -94,7 +94,7 @@ struct LQRTrajectory_
    typedef double _t_f_type;
   _t_f_type t_f;
 
-   typedef std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other >  _debug_info_type;
+   typedef std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> _debug_info_type;
   _debug_info_type debug_info;
 
 
@@ -378,7 +378,7 @@ struct Printer< ::quadrotor_msgs::LQRTrajectory_<ContainerAllocator> >
     s << indent << "t_f: ";
     Printer<double>::stream(s, indent + "  ", v.t_f);
     s << indent << "debug_info: ";
-    Printer<std::basic_string<char, std::char_traits<char>, typename ContainerAllocator::template rebind<char>::other > >::stream(s, indent + "  ", v.debug_info);
+    Printer<std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>>::stream(s, indent + "  ", v.debug_info);
   }
 };
 

@@ -54,18 +54,18 @@
       <param name="rhoOmega" value="100000.0"/>
       <param name="rhoPerchingCollision" value="1000000.0"/>
 
-      <param name="perching_px" value="1.5"/>
-      <param name="perching_py" value="1.5"/>
+      <param name="perching_px" value="10.5"/>
+      <param name="perching_py" value="8.5"/>
       <!-- <param name="perching_pz" value="1.0"/> -->
       <!-- <param name="perching_pz" value="1.5"/> -->
-      <param name="perching_pz" value="1.0"/>
+      <param name="perching_pz" value="4.0"/>
       <!-- <param name="perching_vx" value="2.0"/> -->
       <param name="perching_vx" value="0.0"/>
       <param name="perching_vy" value="0.0"/>
       <!-- <param name="perching_vy" value="3.0"/> -->
       <param name="perching_vz" value="0.0"/>
 
-      <param name="perching_axis_x" value="0.0"/>
+      <param name="perching_axis_x" value="1.0"/>
       <param name="perching_axis_y" value="0.0"/>
       <param name="perching_axis_z" value="0.0"/>
       <!-- <param name="perching_theta" value="0.0"/> -->
@@ -76,6 +76,10 @@
 
       <param name="replan" value="false"/>
       <param name="pause_debug" value="true"/>
+
+      <!-- choose control mode -->
+      <param name="rpg_cmd" value="false"/>
+      <param name="yaw_right_distance" value="0.5"/>
 
     </node>
 
