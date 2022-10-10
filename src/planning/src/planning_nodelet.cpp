@@ -237,6 +237,7 @@ class Nodelet : public nodelet::Nodelet {
         slap_odom_pub.publish(slap_odom);
       }
       else{
+        ROS_INFO("##### test rpg #########################");
         ros::Time time_now = ros::Time::now();
         double t_cur = (time_now - time_get_pub).toSec();
 
@@ -295,6 +296,7 @@ class Nodelet : public nodelet::Nodelet {
         slap_rpg_odom.velocity.angular.z = angular_rate.z();
 
         slap_rpg_odom_pub.publish(slap_rpg_odom);
+        ROS_INFO("----------------test rpg rpg-----------------");
       }
       
       if(pub_time)
@@ -425,7 +427,9 @@ class Nodelet : public nodelet::Nodelet {
 
     // dawn
     slap_odom_pub = nh.advertise<quadrotor_msgs::PositionCommand>("/drone_commander/onboard_command", 10);
-    slap_rpg_odom_pub = nh.advertise<quadrotor_msgs::TrajectoryPoint>("/slapDrone/autopilot/reference_state", 10);
+    
+    // slap_rpg_odom_pub = nh.advertise<quadrotor_msgs::TrajectoryPoint>("/slapDrone/autopilot/reference_state", 10);
+    slap_rpg_odom_pub = nh.advertise<quadrotor_msgs::TrajectoryPoint>("/rpg/command", 10);
 
     ROS_WARN("Planning node initialized!");
   }

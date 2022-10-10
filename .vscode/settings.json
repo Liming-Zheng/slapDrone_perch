@@ -77,5 +77,6 @@
   "python.autoComplete.extraPaths": [
     "/home/ji/ros_ws/Fast-Perching/devel/lib/python3/dist-packages",
     "/opt/ros/noetic/lib/python3/dist-packages"
-  ]
+  ],
+  "cmake.sourceDirectory": "${workspaceFolder}/src/odom_vis/odom_visualization"
 }
