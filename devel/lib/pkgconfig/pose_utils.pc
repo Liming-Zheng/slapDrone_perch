@@ -1,8 +1,8 @@
-prefix=/home/dawn/Drone/SlapDrone/slapDrone_perch/devel
+prefix=/home/ubuntu/slapDrone/slapDrone_perch/devel
 
 Name: pose_utils
 Description: Description of pose_utils
 Version: 0.0.0
-Cflags: -I/home/dawn/Drone/SlapDrone/slapDrone_perch/src/odom_vis/pose_utils/include
+Cflags: -I/home/ubuntu/slapDrone/slapDrone_perch/src/odom_vis/pose_utils/include
 Libs: -L${prefix}/lib -lpose_utils
 Requires: 
