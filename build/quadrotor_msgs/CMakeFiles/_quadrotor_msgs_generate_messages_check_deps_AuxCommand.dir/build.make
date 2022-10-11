@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/src
+CMAKE_SOURCE_DIR = /home/ubuntu/slapDrone/slapDrone_perch/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/build
+CMAKE_BINARY_DIR = /home/ubuntu/slapDrone/slapDrone_perch/build
 
 # Utility rule file for _quadrotor_msgs_generate_messages_check_deps_AuxCommand.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/build
 include quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/progress.make
 
 quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py quadrotor_msgs /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/AuxCommand.msg 
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py quadrotor_msgs /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/AuxCommand.msg 
 
 _quadrotor_msgs_generate_messages_check_deps_AuxCommand: quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand
 _quadrotor_msgs_generate_messages_check_deps_AuxCommand: quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/build.make
@@ -67,10 +67,10 @@ quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxComman
 .PHONY : quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/build
 
 quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/clean:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/cmake_clean.cmake
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs && $(CMAKE_COMMAND) -P CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/cmake_clean.cmake
 .PHONY : quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/clean
 
 quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/depend:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dawn/Drone/SlapDrone/slapDrone_perch/src /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs /home/dawn/Drone/SlapDrone/slapDrone_perch/build /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/slapDrone/slapDrone_perch/src /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs /home/ubuntu/slapDrone/slapDrone_perch/build /home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs /home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quadrotor_msgs/CMakeFiles/_quadrotor_msgs_generate_messages_check_deps_AuxCommand.dir/depend
 

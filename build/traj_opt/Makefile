@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/src
+CMAKE_SOURCE_DIR = /home/ubuntu/slapDrone/slapDrone_perch/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/build
+CMAKE_BINARY_DIR = /home/ubuntu/slapDrone/slapDrone_perch/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -137,14 +137,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles /home/dawn/Drone/SlapDrone/slapDrone_perch/build/traj_opt/CMakeFiles/progress.marks
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 traj_opt/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles 0
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles /home/ubuntu/slapDrone/slapDrone_perch/build/traj_opt/CMakeFiles/progress.marks
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 traj_opt/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 traj_opt/clean
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 traj_opt/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 traj_opt/preinstall
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 traj_opt/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 traj_opt/preinstall
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 traj_opt/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 traj_opt/CMakeFiles/traj_opt.dir/rule:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 traj_opt/CMakeFiles/traj_opt.dir/rule
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 traj_opt/CMakeFiles/traj_opt.dir/rule
 .PHONY : traj_opt/CMakeFiles/traj_opt.dir/rule
 
 # Convenience name for target.
@@ -179,7 +179,7 @@ traj_opt: traj_opt/CMakeFiles/traj_opt.dir/rule
 
 # fast build rule for target.
 traj_opt/fast:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f traj_opt/CMakeFiles/traj_opt.dir/build.make traj_opt/CMakeFiles/traj_opt.dir/build
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(MAKE) -f traj_opt/CMakeFiles/traj_opt.dir/build.make traj_opt/CMakeFiles/traj_opt.dir/build
 .PHONY : traj_opt/fast
 
 src/traj_opt_perching.o: src/traj_opt_perching.cc.o
@@ -188,7 +188,7 @@ src/traj_opt_perching.o: src/traj_opt_perching.cc.o
 
 # target to build an object file
 src/traj_opt_perching.cc.o:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f traj_opt/CMakeFiles/traj_opt.dir/build.make traj_opt/CMakeFiles/traj_opt.dir/src/traj_opt_perching.cc.o
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(MAKE) -f traj_opt/CMakeFiles/traj_opt.dir/build.make traj_opt/CMakeFiles/traj_opt.dir/src/traj_opt_perching.cc.o
 .PHONY : src/traj_opt_perching.cc.o
 
 src/traj_opt_perching.i: src/traj_opt_perching.cc.i
@@ -197,7 +197,7 @@ src/traj_opt_perching.i: src/traj_opt_perching.cc.i
 
 # target to preprocess a source file
 src/traj_opt_perching.cc.i:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f traj_opt/CMakeFiles/traj_opt.dir/build.make traj_opt/CMakeFiles/traj_opt.dir/src/traj_opt_perching.cc.i
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(MAKE) -f traj_opt/CMakeFiles/traj_opt.dir/build.make traj_opt/CMakeFiles/traj_opt.dir/src/traj_opt_perching.cc.i
 .PHONY : src/traj_opt_perching.cc.i
 
 src/traj_opt_perching.s: src/traj_opt_perching.cc.s
@@ -206,7 +206,7 @@ src/traj_opt_perching.s: src/traj_opt_perching.cc.s
 
 # target to generate assembly for a file
 src/traj_opt_perching.cc.s:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f traj_opt/CMakeFiles/traj_opt.dir/build.make traj_opt/CMakeFiles/traj_opt.dir/src/traj_opt_perching.cc.s
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(MAKE) -f traj_opt/CMakeFiles/traj_opt.dir/build.make traj_opt/CMakeFiles/traj_opt.dir/src/traj_opt_perching.cc.s
 .PHONY : src/traj_opt_perching.cc.s
 
 # Help Target
@@ -237,6 +237,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -1,2 +1,2 @@
-odom_vis/odom_visualization:odom_vis/pose_utils:planning:quadrotor_msgs:traj_opt:vis_utils
--DCATKIN_DEVEL_PREFIX=/home/dawn/Drone/SlapDrone/slapDrone_perch/devel -DCMAKE_INSTALL_PREFIX=/home/dawn/Drone/SlapDrone/slapDrone_perch/install -G Unix Makefiles
+odom_vis/odom_visualization:odom_vis/pose_utils:planning:quadrotor_msgs:slapDrone:traj_opt:vis_utils
+-DCATKIN_DEVEL_PREFIX=/home/ubuntu/slapDrone/slapDrone_perch/devel -DCMAKE_INSTALL_PREFIX=/home/ubuntu/slapDrone/slapDrone_perch/install -G Unix Makefiles

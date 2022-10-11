@@ -43,163 +43,163 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/src
+CMAKE_SOURCE_DIR = /home/ubuntu/slapDrone/slapDrone_perch/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/build
+CMAKE_BINARY_DIR = /home/ubuntu/slapDrone/slapDrone_perch/build
 
 # Utility rule file for quadrotor_msgs_generate_messages_cpp.
 
 # Include the progress variables for this target.
 include quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/progress.make
 
-quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/AuxCommand.h
-quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Corrections.h
-quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Gains.h
-quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h
-quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h
-quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PPROutputData.h
-quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Serial.h
-quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h
-quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/StatusData.h
-quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h
-quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h
-quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PolynomialTrajectory.h
-quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/LQRTrajectory.h
-quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/AuxCommand.h
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Corrections.h
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Gains.h
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PPROutputData.h
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Serial.h
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/StatusData.h
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PolynomialTrajectory.h
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/LQRTrajectory.h
+quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h
 
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/AuxCommand.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/AuxCommand.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/AuxCommand.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/AuxCommand.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from quadrotor_msgs/AuxCommand.msg"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs && /home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/AuxCommand.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/AuxCommand.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/AuxCommand.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/AuxCommand.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/AuxCommand.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from quadrotor_msgs/AuxCommand.msg"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs && /home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/AuxCommand.msg -Iquadrotor_msgs:/home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Corrections.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Corrections.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Corrections.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Corrections.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from quadrotor_msgs/Corrections.msg"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs && /home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Corrections.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Corrections.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Corrections.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Corrections.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Corrections.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from quadrotor_msgs/Corrections.msg"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs && /home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Corrections.msg -Iquadrotor_msgs:/home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Gains.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Gains.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Gains.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Gains.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from quadrotor_msgs/Gains.msg"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs && /home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Gains.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Gains.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Gains.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Gains.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Gains.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from quadrotor_msgs/Gains.msg"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs && /home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Gains.msg -Iquadrotor_msgs:/home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/OutputData.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from quadrotor_msgs/OutputData.msg"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs && /home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/OutputData.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/OutputData.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from quadrotor_msgs/OutputData.msg"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs && /home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/OutputData.msg -Iquadrotor_msgs:/home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PositionCommand.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from quadrotor_msgs/PositionCommand.msg"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs && /home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PositionCommand.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PositionCommand.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from quadrotor_msgs/PositionCommand.msg"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs && /home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PositionCommand.msg -Iquadrotor_msgs:/home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PPROutputData.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PPROutputData.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PPROutputData.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PPROutputData.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PPROutputData.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from quadrotor_msgs/PPROutputData.msg"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs && /home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PPROutputData.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PPROutputData.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PPROutputData.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PPROutputData.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PPROutputData.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PPROutputData.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from quadrotor_msgs/PPROutputData.msg"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs && /home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PPROutputData.msg -Iquadrotor_msgs:/home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Serial.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Serial.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Serial.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Serial.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Serial.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from quadrotor_msgs/Serial.msg"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs && /home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Serial.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Serial.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Serial.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Serial.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Serial.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Serial.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from quadrotor_msgs/Serial.msg"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs && /home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Serial.msg -Iquadrotor_msgs:/home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/SO3Command.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/AuxCommand.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating C++ code from quadrotor_msgs/SO3Command.msg"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs && /home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/SO3Command.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/SO3Command.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/AuxCommand.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating C++ code from quadrotor_msgs/SO3Command.msg"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs && /home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/SO3Command.msg -Iquadrotor_msgs:/home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/StatusData.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/StatusData.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/StatusData.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/StatusData.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/StatusData.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating C++ code from quadrotor_msgs/StatusData.msg"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs && /home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/StatusData.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/StatusData.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/StatusData.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/StatusData.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/StatusData.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/StatusData.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Generating C++ code from quadrotor_msgs/StatusData.msg"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs && /home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/StatusData.msg -Iquadrotor_msgs:/home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/TRPYCommand.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/AuxCommand.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating C++ code from quadrotor_msgs/TRPYCommand.msg"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs && /home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/TRPYCommand.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/TRPYCommand.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/AuxCommand.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Generating C++ code from quadrotor_msgs/TRPYCommand.msg"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs && /home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/TRPYCommand.msg -Iquadrotor_msgs:/home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Odometry.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/nav_msgs/msg/Odometry.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/TwistWithCovariance.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating C++ code from quadrotor_msgs/Odometry.msg"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs && /home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Odometry.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Odometry.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/TwistWithCovariance.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/nav_msgs/msg/Odometry.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/geometry_msgs/msg/PoseWithCovariance.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Generating C++ code from quadrotor_msgs/Odometry.msg"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs && /home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/Odometry.msg -Iquadrotor_msgs:/home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PolynomialTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PolynomialTrajectory.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PolynomialTrajectory.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PolynomialTrajectory.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PolynomialTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating C++ code from quadrotor_msgs/PolynomialTrajectory.msg"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs && /home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PolynomialTrajectory.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PolynomialTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PolynomialTrajectory.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PolynomialTrajectory.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PolynomialTrajectory.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PolynomialTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Generating C++ code from quadrotor_msgs/PolynomialTrajectory.msg"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs && /home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/PolynomialTrajectory.msg -Iquadrotor_msgs:/home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/LQRTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/LQRTrajectory.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/LQRTrajectory.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/LQRTrajectory.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/LQRTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating C++ code from quadrotor_msgs/LQRTrajectory.msg"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs && /home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/LQRTrajectory.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/LQRTrajectory.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/LQRTrajectory.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/LQRTrajectory.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/LQRTrajectory.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/LQRTrajectory.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Generating C++ code from quadrotor_msgs/LQRTrajectory.msg"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs && /home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/LQRTrajectory.msg -Iquadrotor_msgs:/home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/TrajectoryPoint.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating C++ code from quadrotor_msgs/TrajectoryPoint.msg"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs && /home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg/TrajectoryPoint.msg -Iquadrotor_msgs:/home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/lib/gencpp/gen_cpp.py
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/TrajectoryPoint.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Vector3.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Pose.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/std_msgs/msg/Header.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Point.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Quaternion.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/geometry_msgs/msg/Twist.msg
+/home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h: /opt/ros/noetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Generating C++ code from quadrotor_msgs/TrajectoryPoint.msg"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs && /home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg/TrajectoryPoint.msg -Iquadrotor_msgs:/home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/msg -Igeometry_msgs:/opt/ros/noetic/share/geometry_msgs/cmake/../msg -Inav_msgs:/opt/ros/noetic/share/nav_msgs/cmake/../msg -Istd_msgs:/opt/ros/noetic/share/std_msgs/cmake/../msg -Iactionlib_msgs:/opt/ros/noetic/share/actionlib_msgs/cmake/../msg -p quadrotor_msgs -o /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs -e /opt/ros/noetic/share/gencpp/cmake/..
 
 quadrotor_msgs_generate_messages_cpp: quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp
-quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/AuxCommand.h
-quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Corrections.h
-quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Gains.h
-quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h
-quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h
-quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PPROutputData.h
-quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Serial.h
-quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h
-quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/StatusData.h
-quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h
-quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h
-quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PolynomialTrajectory.h
-quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/LQRTrajectory.h
-quadrotor_msgs_generate_messages_cpp: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h
+quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/AuxCommand.h
+quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Corrections.h
+quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Gains.h
+quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/OutputData.h
+quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PositionCommand.h
+quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PPROutputData.h
+quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Serial.h
+quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/SO3Command.h
+quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/StatusData.h
+quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TRPYCommand.h
+quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/Odometry.h
+quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/PolynomialTrajectory.h
+quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/LQRTrajectory.h
+quadrotor_msgs_generate_messages_cpp: /home/ubuntu/slapDrone/slapDrone_perch/devel/include/quadrotor_msgs/TrajectoryPoint.h
 quadrotor_msgs_generate_messages_cpp: quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/build.make
 
 .PHONY : quadrotor_msgs_generate_messages_cpp
@@ -210,10 +210,10 @@ quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/build: quadro
 .PHONY : quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/build
 
 quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/clean:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && $(CMAKE_COMMAND) -P CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs && $(CMAKE_COMMAND) -P CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/clean
 
 quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/depend:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dawn/Drone/SlapDrone/slapDrone_perch/src /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs /home/dawn/Drone/SlapDrone/slapDrone_perch/build /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/slapDrone/slapDrone_perch/src /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs /home/ubuntu/slapDrone/slapDrone_perch/build /home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs /home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quadrotor_msgs/CMakeFiles/quadrotor_msgs_generate_messages_cpp.dir/depend
 

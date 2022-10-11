@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/src
+CMAKE_SOURCE_DIR = /home/ubuntu/slapDrone/slapDrone_perch/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/build
+CMAKE_BINARY_DIR = /home/ubuntu/slapDrone/slapDrone_perch/build
 
 # Include any dependencies generated for this target.
 include quadrotor_msgs/CMakeFiles/decode_msgs.dir/depend.make
@@ -58,17 +58,17 @@ include quadrotor_msgs/CMakeFiles/decode_msgs.dir/progress.make
 include quadrotor_msgs/CMakeFiles/decode_msgs.dir/flags.make
 
 quadrotor_msgs/CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o: quadrotor_msgs/CMakeFiles/decode_msgs.dir/flags.make
-quadrotor_msgs/CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/src/decode_msgs.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quadrotor_msgs/CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o -c /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/src/decode_msgs.cpp
+quadrotor_msgs/CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o: /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/src/decode_msgs.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object quadrotor_msgs/CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o -c /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/src/decode_msgs.cpp
 
 quadrotor_msgs/CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.i"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/src/decode_msgs.cpp > CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.i
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/src/decode_msgs.cpp > CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.i
 
 quadrotor_msgs/CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.s"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs/src/decode_msgs.cpp -o CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.s
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs/src/decode_msgs.cpp -o CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.s
 
 # Object files for target decode_msgs
 decode_msgs_OBJECTS = \
@@ -77,22 +77,22 @@ decode_msgs_OBJECTS = \
 # External object files for target decode_msgs
 decode_msgs_EXTERNAL_OBJECTS =
 
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libdecode_msgs.so: quadrotor_msgs/CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libdecode_msgs.so: quadrotor_msgs/CMakeFiles/decode_msgs.dir/build.make
-/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libdecode_msgs.so: quadrotor_msgs/CMakeFiles/decode_msgs.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libdecode_msgs.so"
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/decode_msgs.dir/link.txt --verbose=$(VERBOSE)
+/home/ubuntu/slapDrone/slapDrone_perch/devel/lib/libdecode_msgs.so: quadrotor_msgs/CMakeFiles/decode_msgs.dir/src/decode_msgs.cpp.o
+/home/ubuntu/slapDrone/slapDrone_perch/devel/lib/libdecode_msgs.so: quadrotor_msgs/CMakeFiles/decode_msgs.dir/build.make
+/home/ubuntu/slapDrone/slapDrone_perch/devel/lib/libdecode_msgs.so: quadrotor_msgs/CMakeFiles/decode_msgs.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX shared library /home/ubuntu/slapDrone/slapDrone_perch/devel/lib/libdecode_msgs.so"
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/decode_msgs.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-quadrotor_msgs/CMakeFiles/decode_msgs.dir/build: /home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/libdecode_msgs.so
+quadrotor_msgs/CMakeFiles/decode_msgs.dir/build: /home/ubuntu/slapDrone/slapDrone_perch/devel/lib/libdecode_msgs.so
 
 .PHONY : quadrotor_msgs/CMakeFiles/decode_msgs.dir/build
 
 quadrotor_msgs/CMakeFiles/decode_msgs.dir/clean:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs && $(CMAKE_COMMAND) -P CMakeFiles/decode_msgs.dir/cmake_clean.cmake
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs && $(CMAKE_COMMAND) -P CMakeFiles/decode_msgs.dir/cmake_clean.cmake
 .PHONY : quadrotor_msgs/CMakeFiles/decode_msgs.dir/clean
 
 quadrotor_msgs/CMakeFiles/decode_msgs.dir/depend:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dawn/Drone/SlapDrone/slapDrone_perch/src /home/dawn/Drone/SlapDrone/slapDrone_perch/src/quadrotor_msgs /home/dawn/Drone/SlapDrone/slapDrone_perch/build /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs /home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs/CMakeFiles/decode_msgs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/slapDrone/slapDrone_perch/src /home/ubuntu/slapDrone/slapDrone_perch/src/quadrotor_msgs /home/ubuntu/slapDrone/slapDrone_perch/build /home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs /home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs/CMakeFiles/decode_msgs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : quadrotor_msgs/CMakeFiles/decode_msgs.dir/depend
 

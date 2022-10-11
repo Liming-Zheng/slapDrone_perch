@@ -67,14 +67,14 @@ set(pose_utils_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(pose_utils_SOURCE_PREFIX /home/dawn/Drone/SlapDrone/slapDrone_perch/src/odom_vis/pose_utils)
-  set(pose_utils_DEVEL_PREFIX /home/dawn/Drone/SlapDrone/slapDrone_perch/devel)
+  set(pose_utils_SOURCE_PREFIX /home/ubuntu/slapDrone/slapDrone_perch/src/odom_vis/pose_utils)
+  set(pose_utils_DEVEL_PREFIX /home/ubuntu/slapDrone/slapDrone_perch/devel)
   set(pose_utils_INSTALL_PREFIX "")
   set(pose_utils_PREFIX ${pose_utils_DEVEL_PREFIX})
 else()
   set(pose_utils_SOURCE_PREFIX "")
   set(pose_utils_DEVEL_PREFIX "")
-  set(pose_utils_INSTALL_PREFIX /home/dawn/Drone/SlapDrone/slapDrone_perch/install)
+  set(pose_utils_INSTALL_PREFIX /home/ubuntu/slapDrone/slapDrone_perch/install)
   set(pose_utils_PREFIX ${pose_utils_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/dawn/Drone/SlapDrone/slapDrone_perch/install/lib;/home/dawn/Drone/Amov/v1/Prometheus/devel/lib;/home/dawn/Drone/Fixedwing/devel/lib;/opt/ros/noetic/lib)
+    foreach(path /home/ubuntu/slapDrone/slapDrone_perch/install/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

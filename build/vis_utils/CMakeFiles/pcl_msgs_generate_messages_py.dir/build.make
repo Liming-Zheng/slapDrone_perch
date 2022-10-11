@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/src
+CMAKE_SOURCE_DIR = /home/ubuntu/slapDrone/slapDrone_perch/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/build
+CMAKE_BINARY_DIR = /home/ubuntu/slapDrone/slapDrone_perch/build
 
 # Utility rule file for pcl_msgs_generate_messages_py.
 
@@ -63,10 +63,10 @@ vis_utils/CMakeFiles/pcl_msgs_generate_messages_py.dir/build: pcl_msgs_generate_
 .PHONY : vis_utils/CMakeFiles/pcl_msgs_generate_messages_py.dir/build
 
 vis_utils/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/vis_utils && $(CMAKE_COMMAND) -P CMakeFiles/pcl_msgs_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build/vis_utils && $(CMAKE_COMMAND) -P CMakeFiles/pcl_msgs_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : vis_utils/CMakeFiles/pcl_msgs_generate_messages_py.dir/clean
 
 vis_utils/CMakeFiles/pcl_msgs_generate_messages_py.dir/depend:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dawn/Drone/SlapDrone/slapDrone_perch/src /home/dawn/Drone/SlapDrone/slapDrone_perch/src/vis_utils /home/dawn/Drone/SlapDrone/slapDrone_perch/build /home/dawn/Drone/SlapDrone/slapDrone_perch/build/vis_utils /home/dawn/Drone/SlapDrone/slapDrone_perch/build/vis_utils/CMakeFiles/pcl_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/slapDrone/slapDrone_perch/src /home/ubuntu/slapDrone/slapDrone_perch/src/vis_utils /home/ubuntu/slapDrone/slapDrone_perch/build /home/ubuntu/slapDrone/slapDrone_perch/build/vis_utils /home/ubuntu/slapDrone/slapDrone_perch/build/vis_utils/CMakeFiles/pcl_msgs_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : vis_utils/CMakeFiles/pcl_msgs_generate_messages_py.dir/depend
 

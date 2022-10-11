@@ -1,8 +1,8 @@
-# Install script for directory: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/traj_opt
+# Install script for directory: /home/ubuntu/slapDrone/slapDrone_perch/src/traj_opt
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dawn/Drone/SlapDrone/slapDrone_perch/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/slapDrone/slapDrone_perch/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/traj_opt/catkin_generated/installspace/traj_opt.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/slapDrone/slapDrone_perch/build/traj_opt/catkin_generated/installspace/traj_opt.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/traj_opt/cmake" TYPE FILE FILES
-    "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/traj_opt/catkin_generated/installspace/traj_optConfig.cmake"
-    "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/traj_opt/catkin_generated/installspace/traj_optConfig-version.cmake"
+    "/home/ubuntu/slapDrone/slapDrone_perch/build/traj_opt/catkin_generated/installspace/traj_optConfig.cmake"
+    "/home/ubuntu/slapDrone/slapDrone_perch/build/traj_opt/catkin_generated/installspace/traj_optConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/traj_opt" TYPE FILE FILES "/home/dawn/Drone/SlapDrone/slapDrone_perch/src/traj_opt/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/traj_opt" TYPE FILE FILES "/home/ubuntu/slapDrone/slapDrone_perch/src/traj_opt/package.xml")
 endif()
 

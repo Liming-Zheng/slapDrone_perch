@@ -1,8 +1,8 @@
-# Install script for directory: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/odom_vis/pose_utils
+# Install script for directory: /home/ubuntu/slapDrone/slapDrone_perch/src/odom_vis/pose_utils
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dawn/Drone/SlapDrone/slapDrone_perch/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/slapDrone/slapDrone_perch/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/odom_vis/pose_utils/catkin_generated/installspace/pose_utils.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/slapDrone/slapDrone_perch/build/odom_vis/pose_utils/catkin_generated/installspace/pose_utils.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pose_utils/cmake" TYPE FILE FILES
-    "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/odom_vis/pose_utils/catkin_generated/installspace/pose_utilsConfig.cmake"
-    "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/odom_vis/pose_utils/catkin_generated/installspace/pose_utilsConfig-version.cmake"
+    "/home/ubuntu/slapDrone/slapDrone_perch/build/odom_vis/pose_utils/catkin_generated/installspace/pose_utilsConfig.cmake"
+    "/home/ubuntu/slapDrone/slapDrone_perch/build/odom_vis/pose_utils/catkin_generated/installspace/pose_utilsConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pose_utils" TYPE FILE FILES "/home/dawn/Drone/SlapDrone/slapDrone_perch/src/odom_vis/pose_utils/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/pose_utils" TYPE FILE FILES "/home/ubuntu/slapDrone/slapDrone_perch/src/odom_vis/pose_utils/package.xml")
 endif()
 

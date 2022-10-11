@@ -1,21 +1,21 @@
 Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
-Change Dir: /home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_53254/fast && /usr/bin/make -f CMakeFiles/cmTC_53254.dir/build.make CMakeFiles/cmTC_53254.dir/build
-make[1]: Entering directory '/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_53254.dir/src.c.o
-/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_53254.dir/src.c.o   -c /home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles/CMakeTmp/src.c
-Linking C executable cmTC_53254
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53254.dir/link.txt --verbose=1
-/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_53254.dir/src.c.o  -o cmTC_53254 
-/usr/bin/ld: CMakeFiles/cmTC_53254.dir/src.c.o: in function `main':
-src.c:(.text+0x46): undefined reference to `pthread_create'
-/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
-/usr/bin/ld: src.c:(.text+0x63): undefined reference to `pthread_join'
+Run Build Command(s):/usr/bin/make cmTC_4e909/fast && /usr/bin/make -f CMakeFiles/cmTC_4e909.dir/build.make CMakeFiles/cmTC_4e909.dir/build
+make[1]: Entering directory '/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4e909.dir/src.c.o
+/usr/bin/cc   -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_4e909.dir/src.c.o   -c /home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_4e909
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4e909.dir/link.txt --verbose=1
+/usr/bin/cc  -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_4e909.dir/src.c.o  -o cmTC_4e909 
+/usr/bin/ld: CMakeFiles/cmTC_4e909.dir/src.c.o: in function `main':
+src.c:(.text+0x48): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x50): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5c): undefined reference to `pthread_join'
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_53254.dir/build.make:87: cmTC_53254] Error 1
-make[1]: Leaving directory '/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_53254/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_4e909.dir/build.make:87: cmTC_4e909] Error 1
+make[1]: Leaving directory '/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_4e909/fast] Error 2
 
 
 Source file was:
@@ -39,20 +39,20 @@ int main(void)
 }
 
 Determining if the function pthread_create exists in the pthreads failed with the following output:
-Change Dir: /home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles/CMakeTmp
+Change Dir: /home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make cmTC_53e06/fast && /usr/bin/make -f CMakeFiles/cmTC_53e06.dir/build.make CMakeFiles/cmTC_53e06.dir/build
-make[1]: Entering directory '/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_53e06.dir/CheckFunctionExists.c.o
-/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_53e06.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
-Linking C executable cmTC_53e06
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_53e06.dir/link.txt --verbose=1
-/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_53e06.dir/CheckFunctionExists.c.o  -o cmTC_53e06  -lpthreads 
+Run Build Command(s):/usr/bin/make cmTC_9f972/fast && /usr/bin/make -f CMakeFiles/cmTC_9f972.dir/build.make CMakeFiles/cmTC_9f972.dir/build
+make[1]: Entering directory '/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f972.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_9f972.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9f972
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f972.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_9f972.dir/CheckFunctionExists.c.o  -o cmTC_9f972  -lpthreads 
 /usr/bin/ld: cannot find -lpthreads
 collect2: error: ld returned 1 exit status
-make[1]: *** [CMakeFiles/cmTC_53e06.dir/build.make:87: cmTC_53e06] Error 1
-make[1]: Leaving directory '/home/dawn/Drone/SlapDrone/slapDrone_perch/build/CMakeFiles/CMakeTmp'
-make: *** [Makefile:121: cmTC_53e06/fast] Error 2
+make[1]: *** [CMakeFiles/cmTC_9f972.dir/build.make:87: cmTC_9f972] Error 1
+make[1]: Leaving directory '/home/ubuntu/slapDrone/slapDrone_perch/build/CMakeFiles/CMakeTmp'
+make: *** [Makefile:121: cmTC_9f972/fast] Error 2
 
 
 

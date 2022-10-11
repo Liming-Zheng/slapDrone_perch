@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "${prefix}/include;/usr/include/eigen3".split(
 PROJECT_CATKIN_DEPENDS = "roscpp".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "-ltraj_opt".split(';') if "-ltraj_opt" != "" else []
 PROJECT_NAME = "traj_opt"
-PROJECT_SPACE_DIR = "/home/dawn/Drone/SlapDrone/slapDrone_perch/install"
+PROJECT_SPACE_DIR = "/home/ubuntu/slapDrone/slapDrone_perch/install"
 PROJECT_VERSION = "0.0.0"

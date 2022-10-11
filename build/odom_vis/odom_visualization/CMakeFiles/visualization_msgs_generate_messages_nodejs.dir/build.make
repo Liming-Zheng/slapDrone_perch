@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/src
+CMAKE_SOURCE_DIR = /home/ubuntu/slapDrone/slapDrone_perch/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/build
+CMAKE_BINARY_DIR = /home/ubuntu/slapDrone/slapDrone_perch/build
 
 # Utility rule file for visualization_msgs_generate_messages_nodejs.
 
@@ -63,10 +63,10 @@ odom_vis/odom_visualization/CMakeFiles/visualization_msgs_generate_messages_node
 .PHONY : odom_vis/odom_visualization/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/build
 
 odom_vis/odom_visualization/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build/odom_vis/odom_visualization && $(CMAKE_COMMAND) -P CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build/odom_vis/odom_visualization && $(CMAKE_COMMAND) -P CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/cmake_clean.cmake
 .PHONY : odom_vis/odom_visualization/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/clean
 
 odom_vis/odom_visualization/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/depend:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/dawn/Drone/SlapDrone/slapDrone_perch/src /home/dawn/Drone/SlapDrone/slapDrone_perch/src/odom_vis/odom_visualization /home/dawn/Drone/SlapDrone/slapDrone_perch/build /home/dawn/Drone/SlapDrone/slapDrone_perch/build/odom_vis/odom_visualization /home/dawn/Drone/SlapDrone/slapDrone_perch/build/odom_vis/odom_visualization/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ubuntu/slapDrone/slapDrone_perch/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ubuntu/slapDrone/slapDrone_perch/src /home/ubuntu/slapDrone/slapDrone_perch/src/odom_vis/odom_visualization /home/ubuntu/slapDrone/slapDrone_perch/build /home/ubuntu/slapDrone/slapDrone_perch/build/odom_vis/odom_visualization /home/ubuntu/slapDrone/slapDrone_perch/build/odom_vis/odom_visualization/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : odom_vis/odom_visualization/CMakeFiles/visualization_msgs_generate_messages_nodejs.dir/depend
 

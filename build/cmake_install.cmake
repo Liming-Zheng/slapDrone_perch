@@ -1,8 +1,8 @@
-# Install script for directory: /home/dawn/Drone/SlapDrone/slapDrone_perch/src
+# Install script for directory: /home/ubuntu/slapDrone/slapDrone_perch/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dawn/Drone/SlapDrone/slapDrone_perch/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/slapDrone/slapDrone_perch/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,94 +49,95 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/dawn/Drone/SlapDrone/slapDrone_perch/install/_setup_util.py")
+   "/home/ubuntu/slapDrone/slapDrone_perch/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/dawn/Drone/SlapDrone/slapDrone_perch/install" TYPE PROGRAM FILES "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/ubuntu/slapDrone/slapDrone_perch/install" TYPE PROGRAM FILES "/home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/dawn/Drone/SlapDrone/slapDrone_perch/install/env.sh")
+   "/home/ubuntu/slapDrone/slapDrone_perch/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/dawn/Drone/SlapDrone/slapDrone_perch/install" TYPE PROGRAM FILES "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/ubuntu/slapDrone/slapDrone_perch/install" TYPE PROGRAM FILES "/home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/dawn/Drone/SlapDrone/slapDrone_perch/install/setup.bash;/home/dawn/Drone/SlapDrone/slapDrone_perch/install/local_setup.bash")
+   "/home/ubuntu/slapDrone/slapDrone_perch/install/setup.bash;/home/ubuntu/slapDrone/slapDrone_perch/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/dawn/Drone/SlapDrone/slapDrone_perch/install" TYPE FILE FILES
-    "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/installspace/setup.bash"
-    "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/ubuntu/slapDrone/slapDrone_perch/install" TYPE FILE FILES
+    "/home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/installspace/setup.bash"
+    "/home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/dawn/Drone/SlapDrone/slapDrone_perch/install/setup.sh;/home/dawn/Drone/SlapDrone/slapDrone_perch/install/local_setup.sh")
+   "/home/ubuntu/slapDrone/slapDrone_perch/install/setup.sh;/home/ubuntu/slapDrone/slapDrone_perch/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/dawn/Drone/SlapDrone/slapDrone_perch/install" TYPE FILE FILES
-    "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/installspace/setup.sh"
-    "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/ubuntu/slapDrone/slapDrone_perch/install" TYPE FILE FILES
+    "/home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/installspace/setup.sh"
+    "/home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/dawn/Drone/SlapDrone/slapDrone_perch/install/setup.zsh;/home/dawn/Drone/SlapDrone/slapDrone_perch/install/local_setup.zsh")
+   "/home/ubuntu/slapDrone/slapDrone_perch/install/setup.zsh;/home/ubuntu/slapDrone/slapDrone_perch/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/dawn/Drone/SlapDrone/slapDrone_perch/install" TYPE FILE FILES
-    "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/installspace/setup.zsh"
-    "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/ubuntu/slapDrone/slapDrone_perch/install" TYPE FILE FILES
+    "/home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/installspace/setup.zsh"
+    "/home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/dawn/Drone/SlapDrone/slapDrone_perch/install/.rosinstall")
+   "/home/ubuntu/slapDrone/slapDrone_perch/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/dawn/Drone/SlapDrone/slapDrone_perch/install" TYPE FILE FILES "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/ubuntu/slapDrone/slapDrone_perch/install" TYPE FILE FILES "/home/ubuntu/slapDrone/slapDrone_perch/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/dawn/Drone/SlapDrone/slapDrone_perch/build/gtest/cmake_install.cmake")
-  include("/home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs/cmake_install.cmake")
-  include("/home/dawn/Drone/SlapDrone/slapDrone_perch/build/odom_vis/pose_utils/cmake_install.cmake")
-  include("/home/dawn/Drone/SlapDrone/slapDrone_perch/build/odom_vis/odom_visualization/cmake_install.cmake")
-  include("/home/dawn/Drone/SlapDrone/slapDrone_perch/build/vis_utils/cmake_install.cmake")
-  include("/home/dawn/Drone/SlapDrone/slapDrone_perch/build/traj_opt/cmake_install.cmake")
-  include("/home/dawn/Drone/SlapDrone/slapDrone_perch/build/planning/cmake_install.cmake")
+  include("/home/ubuntu/slapDrone/slapDrone_perch/build/gtest/cmake_install.cmake")
+  include("/home/ubuntu/slapDrone/slapDrone_perch/build/quadrotor_msgs/cmake_install.cmake")
+  include("/home/ubuntu/slapDrone/slapDrone_perch/build/odom_vis/pose_utils/cmake_install.cmake")
+  include("/home/ubuntu/slapDrone/slapDrone_perch/build/slapDrone/cmake_install.cmake")
+  include("/home/ubuntu/slapDrone/slapDrone_perch/build/odom_vis/odom_visualization/cmake_install.cmake")
+  include("/home/ubuntu/slapDrone/slapDrone_perch/build/vis_utils/cmake_install.cmake")
+  include("/home/ubuntu/slapDrone/slapDrone_perch/build/traj_opt/cmake_install.cmake")
+  include("/home/ubuntu/slapDrone/slapDrone_perch/build/planning/cmake_install.cmake")
 
 endif()
 
@@ -148,5 +149,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ubuntu/slapDrone/slapDrone_perch/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

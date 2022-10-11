@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "odom_visualization"
-PROJECT_SPACE_DIR = "/home/dawn/Drone/SlapDrone/slapDrone_perch/devel"
+PROJECT_SPACE_DIR = "/home/ubuntu/slapDrone/slapDrone_perch/devel"
 PROJECT_VERSION = "0.0.0"

@@ -1,8 +1,8 @@
-# Install script for directory: /home/dawn/Drone/SlapDrone/slapDrone_perch/src/odom_vis/odom_visualization
+# Install script for directory: /home/ubuntu/slapDrone/slapDrone_perch/src/odom_vis/odom_visualization
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/dawn/Drone/SlapDrone/slapDrone_perch/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ubuntu/slapDrone/slapDrone_perch/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,17 +38,17 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/odom_vis/odom_visualization/catkin_generated/installspace/odom_visualization.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/ubuntu/slapDrone/slapDrone_perch/build/odom_vis/odom_visualization/catkin_generated/installspace/odom_visualization.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/odom_visualization/cmake" TYPE FILE FILES
-    "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/odom_vis/odom_visualization/catkin_generated/installspace/odom_visualizationConfig.cmake"
-    "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/odom_vis/odom_visualization/catkin_generated/installspace/odom_visualizationConfig-version.cmake"
+    "/home/ubuntu/slapDrone/slapDrone_perch/build/odom_vis/odom_visualization/catkin_generated/installspace/odom_visualizationConfig.cmake"
+    "/home/ubuntu/slapDrone/slapDrone_perch/build/odom_vis/odom_visualization/catkin_generated/installspace/odom_visualizationConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/odom_visualization" TYPE FILE FILES "/home/dawn/Drone/SlapDrone/slapDrone_perch/src/odom_vis/odom_visualization/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/odom_visualization" TYPE FILE FILES "/home/ubuntu/slapDrone/slapDrone_perch/src/odom_vis/odom_visualization/package.xml")
 endif()
 

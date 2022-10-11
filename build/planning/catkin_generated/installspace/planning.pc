@@ -1,4 +1,4 @@
-prefix=/home/dawn/Drone/SlapDrone/slapDrone_perch/install
+prefix=/home/ubuntu/slapDrone/slapDrone_perch/install
 
 Name: planning
 Description: Description of planning

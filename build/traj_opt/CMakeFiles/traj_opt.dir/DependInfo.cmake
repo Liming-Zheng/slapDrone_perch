@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/dawn/Drone/SlapDrone/slapDrone_perch/src/traj_opt/src/traj_opt_perching.cc" "/home/dawn/Drone/SlapDrone/slapDrone_perch/build/traj_opt/CMakeFiles/traj_opt.dir/src/traj_opt_perching.cc.o"
+  "/home/ubuntu/slapDrone/slapDrone_perch/src/traj_opt/src/traj_opt_perching.cc" "/home/ubuntu/slapDrone/slapDrone_perch/build/traj_opt/CMakeFiles/traj_opt.dir/src/traj_opt_perching.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -18,9 +18,9 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/dawn/Drone/SlapDrone/slapDrone_perch/src/traj_opt/include"
+  "/home/ubuntu/slapDrone/slapDrone_perch/src/traj_opt/include"
   "/usr/include/eigen3"
-  "/home/dawn/Drone/SlapDrone/slapDrone_perch/src/vis_utils/include"
+  "/home/ubuntu/slapDrone/slapDrone_perch/src/vis_utils/include"
   "/opt/ros/noetic/include"
   "/opt/ros/noetic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   "/usr/include/pcl-1.10"
