@@ -35,6 +35,7 @@ class Nodelet : public nodelet::Nodelet {
   ros::Subscriber now_position_sub;
   ros::Subscriber branch_pose_sub;
   ros::Subscriber retakeoff_branch_sub;
+  ros::Subscriber second_branch_sub;
   ros::Subscriber RC_sub;
   ros::Time time_get_pub;
   ros::Time time_pub_cmd;
@@ -49,27 +50,21 @@ class Nodelet : public nodelet::Nodelet {
 
   // retake off from branch
   Eigen::Vector3d retakeoff_branch_target_pos_;
+  Eigen::Vector3d drone_now_positon_mocap;
   nav_msgs::Odometry retakeoff_branch_pos;
   mavros_msgs::RCIn RC_now;
   int retakeoff_channel_;
   bool compelet_tra_once = false;
+  bool retakeoff_branch_enable = false;
+
+  // fly to second branch
+  bool second_branch_enable = false;
+  Eigen::Vector3d second_perching_p_, second_perching_v_, second_perching_axis_;
+  double second_perching_theta_;
 
   // dawn pub the cmd topic to slapDrone_base
   quadrotor_msgs::PositionCommand slap_odom;
-  quadrotor_msgs::TrajectoryPoint slap_rpg_odom;
-
-  std::shared_ptr<vis_utils::VisUtils> visPtr_;
-  std::shared_ptr<traj_opt::TrajOpt> trajOptPtr_;
-
-  // NOTE planning or fake target
-  bool target_ = false;
-  Eigen::Vector3d goal_;
-
-  // NOTE just for debug
-  bool debug_ = false;
-  bool once_ = false;
-  bool debug_replan_ = false;
-
+  quadrotor_msgs::TrajectoryPoint slap_rpg_odom;  double second_branch_angle;
   double tracking_dur_, tracking_dist_, tolerance_d_;
   Eigen::Vector3d perching_p_, perching_v_, perching_axis_;
   double perching_theta_;
@@ -121,6 +116,9 @@ class Nodelet : public nodelet::Nodelet {
   }
 
   void now_position_cb(const nav_msgs::OdometryConstPtr& msg){
+    drone_now_positon_mocap.x() = msg->pose.pose.position.x;
+    drone_now_positon_mocap.y() = msg->pose.pose.position.y;
+    drone_now_positon_mocap.z() = msg->pose.pose.position.z;
     if (now_position_enable)
     {
       now_position.pose.pose.position.x = msg->pose.pose.position.x;
@@ -135,10 +133,42 @@ class Nodelet : public nodelet::Nodelet {
     branch_pose = *msg;
   }
 
+  void retakeoff_branch_cb(const geometry_msgs::PoseStampedConstPtr& msg)
+  {
+    retakeoff_branch_enable = true;
+  }
+
+  void second_branch_cb(const geometry_msgs::PoseStampedConstPtr& msg)
+  {
+    second_branch_enable = true;
+    perching_p_ = second_perching_p_;
+    perching_axis_ = second_perching_axis_;
+    perching_theta_ = second_perching_theta_;
+    now_position_enable = true;
+    triger_received_ = true;
+    time_get_pub = ros::Time::now();
+  }
+
+// TODO
   void debug_timer_callback(const ros::TimerEvent& event) {
-    if (500 < RC_now.channels[retakeoff_channel_] < 1200 && )
+    if (500 < RC_now.channels[retakeoff_channel_] < 1200 && retakeoff_branch_enable && compelet_tra_once)
     {
-      /* code */
+      slap_rpg_odom.pose.position.x = retakeoff_branch_target_pos_.x();
+      slap_rpg_odom.pose.position.y = retakeoff_branch_target_pos_.y();
+      slap_rpg_odom.pose.position.z = retakeoff_branch_target_pos_.z();
+      ROS_INFO("###### Now retakeoff from branch and the target position is [%0.2f, %0.2f, %0.2f] ######", slap_rpg_odom.pose.position.x, slap_rpg_odom.pose.position.y, slap_rpg_odom.pose.position.z);
+      for (double t = 0.0; t <= 10.0; t+=0.01)
+      {
+          ros::Duration(0.01).sleep();
+          slap_rpg_odom_pub.publish(slap_rpg_odom);
+          double distance_retakeoff_target = (retakeoff_branch_target_pos_ - drone_now_positon_mocap).norm();
+          if (distance_retakeoff_target < 0.06)
+          {
+            ROS_INFO("###### retakeoff successfully!!! ######");
+            retakeoff_branch_enable = false;
+            return;
+          }
+      }
     }
     
     if (!triger_received_) {
@@ -432,6 +462,13 @@ class Nodelet : public nodelet::Nodelet {
     nh.getParam("retakeoff_branch_py", retakeoff_branch_target_pos_.y());
     nh.getParam("retakeoff_branch_pz", retakeoff_branch_target_pos_.z());
     nh.getParam("retakeoff_channel", retakeoff_channel_);
+    nh.getParam("second_perching_px", second_perching_p_.x());
+    nh.getParam("second_perching_py", second_perching_p_.y());
+    nh.getParam("second_perching_pz", second_perching_p_.z());
+    nh.getParam("second_perching_axis_x", second_perching_axis_.x());
+    nh.getParam("second_perching_axis_y", second_perching_axis_.y());
+    nh.getParam("second_perching_axis_z", second_perching_axis_.z());
+    nh.getParam("second_perching_theta", second_perching_theta_);
 
     visPtr_ = std::make_shared<vis_utils::VisUtils>(nh);
     trajOptPtr_ = std::make_shared<traj_opt::TrajOpt>(nh);
@@ -440,7 +477,10 @@ class Nodelet : public nodelet::Nodelet {
 
     triger_sub_ = nh.subscribe<geometry_msgs::PoseStamped>("triger", 10, &Nodelet::triger_callback, this, ros::TransportHints().tcpNoDelay());
 
-    retakeoff_branch_sub = nh.subscribe<geometry_msgs::PoseStamped>("/slapdrone/retake_off", 10, &Nodelet::retakeoff_branch_cb, this, ros::TransportHints().tcpNoDelay());
+    retakeoff_branch_sub = nh.subscribe<geometry_msgs::PoseStamped>("/slapdrone/retake_off_enable", 10, &Nodelet::retakeoff_branch_cb, this, ros::TransportHints().tcpNoDelay());
+
+    second_branch_sub = nh.subscribe<geometry_msgs::PoseStamped>("/slapdrone/second_branch_enable", 10, &Nodelet::second_branch_cb, this, ros::TransportHints().tcpNoDelay());
+
 
     now_position_sub = nh.subscribe<nav_msgs::Odometry>("/mocap/slapDrone", 10, &Nodelet::now_position_cb, this, ros::TransportHints().tcpNoDelay());
 

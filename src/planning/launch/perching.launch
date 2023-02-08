@@ -55,6 +55,7 @@
       <param name="rhoOmega" value="100000.0"/>
       <param name="rhoPerchingCollision" value="1000000.0"/>
 
+      <!-- *******************first branch ************************ -->
       <!-- set branch position -->
       <param name="perching_px" value="4.0"/>
       <param name="perching_py" value="7.0"/>
@@ -87,6 +88,18 @@
       <param name="retakeoff_branch_pz" value="1.0"/>
       <!-- count from 0, so in your RC it shoud be the value+1 -->
       <param name="retakeoff_channel" value="10"/>
+
+      <!-- **********************second branch positon and angle******************************** -->
+      <!-- second branch position -->
+      <param name="second_perching_px" value="0.0"/>
+      <param name="second_perching_py" value="0.0"/>
+      <param name="second_perching_pz" value="0.0"/>
+
+      <!-- set branch angle -->
+      <param name="second_perching_axis_x" value="0.0"/>
+      <param name="second_perching_axis_y" value="0.0"/>
+      <param name="second_perching_axis_z" value="0.0"/>
+      <param name="second_perching_theta" value="0.0"/>
 
     </node>
 

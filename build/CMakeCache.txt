@@ -451,6 +451,9 @@ gennodejs_DIR:PATH=/opt/ros/noetic/share/gennodejs/cmake
 //The directory containing a CMake configuration file for genpy.
 genpy_DIR:PATH=/opt/ros/noetic/share/genpy/cmake
 
+//The directory containing a CMake configuration file for geographic_msgs.
+geographic_msgs_DIR:PATH=/opt/ros/noetic/share/geographic_msgs/cmake
+
 //The directory containing a CMake configuration file for geometry_msgs.
 geometry_msgs_DIR:PATH=/opt/ros/noetic/share/geometry_msgs/cmake
 
@@ -508,6 +511,9 @@ gtest_main_LIB_DEPENDS:STATIC=general;gtest;
 
 //Path to a library.
 lib:FILEPATH=/opt/ros/noetic/lib/libtf2.so
+
+//The directory containing a CMake configuration file for mavros_msgs.
+mavros_msgs_DIR:PATH=/opt/ros/noetic/share/mavros_msgs/cmake
 
 //The directory containing a CMake configuration file for message_filters.
 message_filters_DIR:PATH=/opt/ros/noetic/share/message_filters/cmake
@@ -658,6 +664,9 @@ traj_opt_LIB_DEPENDS:STATIC=general;/opt/ros/noetic/lib/libpcl_ros_filter.so;gen
 
 //Value Computed by CMake
 traj_opt_SOURCE_DIR:STATIC=/home/dawn/Drone/SlapDrone/slapDrone_perch/src/traj_opt
+
+//The directory containing a CMake configuration file for uuid_msgs.
+uuid_msgs_DIR:PATH=/opt/ros/noetic/share/uuid_msgs/cmake
 
 //Value Computed by CMake
 vis_utils_BINARY_DIR:STATIC=/home/dawn/Drone/SlapDrone/slapDrone_perch/build/vis_utils

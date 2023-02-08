@@ -24,6 +24,7 @@ planning/CMakeFiles/planning_nodelet.dir/src/planning_nodelet.cpp.o
  /opt/ros/noetic/include/geometry_msgs/Twist.h
  /opt/ros/noetic/include/geometry_msgs/TwistWithCovariance.h
  /opt/ros/noetic/include/geometry_msgs/Vector3.h
+ /opt/ros/noetic/include/mavros_msgs/RCIn.h
  /opt/ros/noetic/include/nav_msgs/Odometry.h
  /opt/ros/noetic/include/nav_msgs/Path.h
  /opt/ros/noetic/include/nodelet/exception.h

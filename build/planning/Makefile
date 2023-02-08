@@ -102,6 +102,17 @@ list_install_components/fast: list_install_components
 
 .PHONY : list_install_components/fast
 
+# Special rule for the target test
+test:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
+	/usr/bin/ctest --force-new-ctest-process $(ARGS)
+.PHONY : test
+
+# Special rule for the target test
+test/fast: test
+
+.PHONY : test/fast
+
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -123,17 +134,6 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
-
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
-
-# Special rule for the target test
-test/fast: test
-
-.PHONY : test/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -168,19 +168,19 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-planning/CMakeFiles/rpg_perch_nodelet.dir/rule:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/rpg_perch_nodelet.dir/rule
-.PHONY : planning/CMakeFiles/rpg_perch_nodelet.dir/rule
+planning/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
+.PHONY : planning/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
-rpg_perch_nodelet: planning/CMakeFiles/rpg_perch_nodelet.dir/rule
+uuid_msgs_generate_messages_py: planning/CMakeFiles/uuid_msgs_generate_messages_py.dir/rule
 
-.PHONY : rpg_perch_nodelet
+.PHONY : uuid_msgs_generate_messages_py
 
 # fast build rule for target.
-rpg_perch_nodelet/fast:
-	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/rpg_perch_nodelet.dir/build.make planning/CMakeFiles/rpg_perch_nodelet.dir/build
-.PHONY : rpg_perch_nodelet/fast
+uuid_msgs_generate_messages_py/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/uuid_msgs_generate_messages_py.dir/build.make planning/CMakeFiles/uuid_msgs_generate_messages_py.dir/build
+.PHONY : uuid_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 planning/CMakeFiles/planning_nodelet.dir/rule:
@@ -196,6 +196,231 @@ planning_nodelet: planning/CMakeFiles/planning_nodelet.dir/rule
 planning_nodelet/fast:
 	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/planning_nodelet.dir/build.make planning/CMakeFiles/planning_nodelet.dir/build
 .PHONY : planning_nodelet/fast
+
+# Convenience name for target.
+planning/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule
+.PHONY : planning/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+mavros_msgs_generate_messages_cpp: planning/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : mavros_msgs_generate_messages_cpp
+
+# fast build rule for target.
+mavros_msgs_generate_messages_cpp/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build.make planning/CMakeFiles/mavros_msgs_generate_messages_cpp.dir/build
+.PHONY : mavros_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+planning/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
+.PHONY : planning/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+uuid_msgs_generate_messages_cpp: planning/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : uuid_msgs_generate_messages_cpp
+
+# fast build rule for target.
+uuid_msgs_generate_messages_cpp/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build.make planning/CMakeFiles/uuid_msgs_generate_messages_cpp.dir/build
+.PHONY : uuid_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+planning/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule
+.PHONY : planning/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+mavros_msgs_generate_messages_eus: planning/CMakeFiles/mavros_msgs_generate_messages_eus.dir/rule
+
+.PHONY : mavros_msgs_generate_messages_eus
+
+# fast build rule for target.
+mavros_msgs_generate_messages_eus/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build.make planning/CMakeFiles/mavros_msgs_generate_messages_eus.dir/build
+.PHONY : mavros_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+planning/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
+.PHONY : planning/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+uuid_msgs_generate_messages_nodejs: planning/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : uuid_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+uuid_msgs_generate_messages_nodejs/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build.make planning/CMakeFiles/uuid_msgs_generate_messages_nodejs.dir/build
+.PHONY : uuid_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+planning/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule
+.PHONY : planning/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+mavros_msgs_generate_messages_lisp: planning/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : mavros_msgs_generate_messages_lisp
+
+# fast build rule for target.
+mavros_msgs_generate_messages_lisp/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build.make planning/CMakeFiles/mavros_msgs_generate_messages_lisp.dir/build
+.PHONY : mavros_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+planning/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule
+.PHONY : planning/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+mavros_msgs_generate_messages_nodejs: planning/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : mavros_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+mavros_msgs_generate_messages_nodejs/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build.make planning/CMakeFiles/mavros_msgs_generate_messages_nodejs.dir/build
+.PHONY : mavros_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+planning/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
+.PHONY : planning/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
+
+# Convenience name for target.
+geographic_msgs_generate_messages_cpp: planning/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/rule
+
+.PHONY : geographic_msgs_generate_messages_cpp
+
+# fast build rule for target.
+geographic_msgs_generate_messages_cpp/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build.make planning/CMakeFiles/geographic_msgs_generate_messages_cpp.dir/build
+.PHONY : geographic_msgs_generate_messages_cpp/fast
+
+# Convenience name for target.
+planning/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
+.PHONY : planning/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+geographic_msgs_generate_messages_py: planning/CMakeFiles/geographic_msgs_generate_messages_py.dir/rule
+
+.PHONY : geographic_msgs_generate_messages_py
+
+# fast build rule for target.
+geographic_msgs_generate_messages_py/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/geographic_msgs_generate_messages_py.dir/build.make planning/CMakeFiles/geographic_msgs_generate_messages_py.dir/build
+.PHONY : geographic_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+planning/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
+.PHONY : planning/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+uuid_msgs_generate_messages_eus: planning/CMakeFiles/uuid_msgs_generate_messages_eus.dir/rule
+
+.PHONY : uuid_msgs_generate_messages_eus
+
+# fast build rule for target.
+uuid_msgs_generate_messages_eus/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build.make planning/CMakeFiles/uuid_msgs_generate_messages_eus.dir/build
+.PHONY : uuid_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+planning/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule
+.PHONY : planning/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule
+
+# Convenience name for target.
+mavros_msgs_generate_messages_py: planning/CMakeFiles/mavros_msgs_generate_messages_py.dir/rule
+
+.PHONY : mavros_msgs_generate_messages_py
+
+# fast build rule for target.
+mavros_msgs_generate_messages_py/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/mavros_msgs_generate_messages_py.dir/build.make planning/CMakeFiles/mavros_msgs_generate_messages_py.dir/build
+.PHONY : mavros_msgs_generate_messages_py/fast
+
+# Convenience name for target.
+planning/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
+.PHONY : planning/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
+
+# Convenience name for target.
+geographic_msgs_generate_messages_eus: planning/CMakeFiles/geographic_msgs_generate_messages_eus.dir/rule
+
+.PHONY : geographic_msgs_generate_messages_eus
+
+# fast build rule for target.
+geographic_msgs_generate_messages_eus/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build.make planning/CMakeFiles/geographic_msgs_generate_messages_eus.dir/build
+.PHONY : geographic_msgs_generate_messages_eus/fast
+
+# Convenience name for target.
+planning/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule
+.PHONY : planning/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+geographic_msgs_generate_messages_lisp: planning/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : geographic_msgs_generate_messages_lisp
+
+# fast build rule for target.
+geographic_msgs_generate_messages_lisp/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build.make planning/CMakeFiles/geographic_msgs_generate_messages_lisp.dir/build
+.PHONY : geographic_msgs_generate_messages_lisp/fast
+
+# Convenience name for target.
+planning/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
+.PHONY : planning/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
+
+# Convenience name for target.
+geographic_msgs_generate_messages_nodejs: planning/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/rule
+
+.PHONY : geographic_msgs_generate_messages_nodejs
+
+# fast build rule for target.
+geographic_msgs_generate_messages_nodejs/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build.make planning/CMakeFiles/geographic_msgs_generate_messages_nodejs.dir/build
+.PHONY : geographic_msgs_generate_messages_nodejs/fast
+
+# Convenience name for target.
+planning/CMakeFiles/rpg_perch_nodelet.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/rpg_perch_nodelet.dir/rule
+.PHONY : planning/CMakeFiles/rpg_perch_nodelet.dir/rule
+
+# Convenience name for target.
+rpg_perch_nodelet: planning/CMakeFiles/rpg_perch_nodelet.dir/rule
+
+.PHONY : rpg_perch_nodelet
+
+# fast build rule for target.
+rpg_perch_nodelet/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/rpg_perch_nodelet.dir/build.make planning/CMakeFiles/rpg_perch_nodelet.dir/build
+.PHONY : rpg_perch_nodelet/fast
+
+# Convenience name for target.
+planning/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f CMakeFiles/Makefile2 planning/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule
+.PHONY : planning/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+uuid_msgs_generate_messages_lisp: planning/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/rule
+
+.PHONY : uuid_msgs_generate_messages_lisp
+
+# fast build rule for target.
+uuid_msgs_generate_messages_lisp/fast:
+	cd /home/dawn/Drone/SlapDrone/slapDrone_perch/build && $(MAKE) -f planning/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build.make planning/CMakeFiles/uuid_msgs_generate_messages_lisp.dir/build
+.PHONY : uuid_msgs_generate_messages_lisp/fast
 
 src/planning_nodelet.o: src/planning_nodelet.cpp.o
 
@@ -261,11 +486,26 @@ help:
 	@echo "... install/local"
 	@echo "... install"
 	@echo "... list_install_components"
+	@echo "... test"
+	@echo "... uuid_msgs_generate_messages_py"
+	@echo "... planning_nodelet"
+	@echo "... mavros_msgs_generate_messages_cpp"
+	@echo "... uuid_msgs_generate_messages_cpp"
+	@echo "... mavros_msgs_generate_messages_eus"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... test"
+	@echo "... uuid_msgs_generate_messages_nodejs"
+	@echo "... mavros_msgs_generate_messages_lisp"
+	@echo "... mavros_msgs_generate_messages_nodejs"
+	@echo "... geographic_msgs_generate_messages_cpp"
+	@echo "... geographic_msgs_generate_messages_py"
+	@echo "... uuid_msgs_generate_messages_eus"
+	@echo "... mavros_msgs_generate_messages_py"
+	@echo "... geographic_msgs_generate_messages_eus"
+	@echo "... geographic_msgs_generate_messages_lisp"
+	@echo "... geographic_msgs_generate_messages_nodejs"
 	@echo "... rpg_perch_nodelet"
-	@echo "... planning_nodelet"
+	@echo "... uuid_msgs_generate_messages_lisp"
 	@echo "... src/planning_nodelet.o"
 	@echo "... src/planning_nodelet.i"
 	@echo "... src/planning_nodelet.s"
