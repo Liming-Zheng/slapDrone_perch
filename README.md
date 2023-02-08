@@ -1,19 +1,13 @@
-# Fast-Perching
+# SlapDrone_Perch
 
 ## 0. Overview
-**Fast-Perching** presents a novel trajectory planning method for real-time aerial perching, which adaptively adjusts terminal states and the trajectory duration. This feature is especially notable on micro aerial robots with low maneuverability or scenarios where the space is not enough.
+**SlapDrone_Perch** Here we develop a method to perching our slapDrone in real forest. This project including indoor test code and ourdoor test code. Indoor test will rely on the position message from OptiTrack, and outdoor test will rely on the relative position message from vision.
 
-**Authors**: Jialin Ji, Tiankai Yang and [Fei Gao](https://ustfei.com/) from the [ZJU Fast Lab](http://zju-fast.com/). 
+**Authors**: Liming Zheng 
 
-**Paper**: [Real-Time Trajectory Planning for Aerial Perching](https://arxiv.org/abs/2203.01061), Jialin Ji, Tiankai Yang, Chao Xu, Fei Gao, Accepted in IEEE/RSJ International Conference on Intelligent Robots and Systems (__IROS 2022__).
+**Paper**: Perching in real forest [in progress, will submitted in July 2023]
 
-**Video Links**: [bilibili](https://www.bilibili.com/video/BV14q4y147uz)
-<a href="https://www.bilibili.com/video/BV14q4y147uz" target="blank">
-  <p align="center">
-    <img src="figs/cover.png" width="500"/>
-  </p>
-</a>
-
+**Video Links**: 
 ## 1. Simulation of Aerial Perching
 
 >Preparation and visualization:
@@ -76,3 +70,5 @@ roslaunch planning perching.launch
 
 ## 3. Acknowledgement
 We use [**MINCO**](https://github.com/ZJU-FAST-Lab/GCOPTER) as our trajectory representation.
+
+We develop our project from [Fast-Perching](https://github.com/ZJU-FAST-Lab/Fast-Perching)

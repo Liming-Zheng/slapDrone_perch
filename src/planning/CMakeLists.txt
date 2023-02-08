@@ -12,6 +12,7 @@ find_package(catkin REQUIRED COMPONENTS
   nodelet
   vis_utils
   quadrotor_msgs
+  mavros_msgs
 )
 
 catkin_package(

@@ -8,6 +8,7 @@
 #include <traj_opt/traj_opt.h>
 #include <quadrotor_msgs/PositionCommand.h>
 #include <quadrotor_msgs/TrajectoryPoint.h>
+#include <mavros_msgs/RCIn.h>
 
 
 #include <Eigen/Core>
@@ -33,6 +34,8 @@ class Nodelet : public nodelet::Nodelet {
   ros::Publisher slap_grasper_command_pub;
   ros::Subscriber now_position_sub;
   ros::Subscriber branch_pose_sub;
+  ros::Subscriber retakeoff_branch_sub;
+  ros::Subscriber RC_sub;
   ros::Time time_get_pub;
   ros::Time time_pub_cmd;
   bool pub_time = true;
@@ -43,7 +46,13 @@ class Nodelet : public nodelet::Nodelet {
   double yaw_right_distance_;
   bool using_grasper;
   std_msgs::String grasper_command;
-  
+
+  // retake off from branch
+  Eigen::Vector3d retakeoff_branch_target_pos_;
+  nav_msgs::Odometry retakeoff_branch_pos;
+  mavros_msgs::RCIn RC_now;
+  int retakeoff_channel_;
+  bool compelet_tra_once = false;
 
   // dawn pub the cmd topic to slapDrone_base
   quadrotor_msgs::PositionCommand slap_odom;
@@ -105,6 +114,12 @@ class Nodelet : public nodelet::Nodelet {
     time_get_pub = ros::Time::now();
   }
 
+
+  void RC_cb(const mavros_msgs::RCInConstPtr& msg)
+  {
+    RC_now = *msg;
+  }
+
   void now_position_cb(const nav_msgs::OdometryConstPtr& msg){
     if (now_position_enable)
     {
@@ -121,6 +136,11 @@ class Nodelet : public nodelet::Nodelet {
   }
 
   void debug_timer_callback(const ros::TimerEvent& event) {
+    if (500 < RC_now.channels[retakeoff_channel_] < 1200 && )
+    {
+      /* code */
+    }
+    
     if (!triger_received_) {
       return;
     }
@@ -381,11 +401,13 @@ class Nodelet : public nodelet::Nodelet {
         std::cout << ">>>>>>> grasper is working for perching <<<<<<<<< " << std::endl;
     }
 
+    // for debug
     std::cout << "tailV: " << traj.getVel(traj.getTotalDuration()).transpose() << std::endl;
     std::cout << "max thrust: " << traj.getMaxThrust() << std::endl;
     std::cout << "max omega: " << max_omega << std::endl;
 
     triger_received_ = false;
+    compelet_tra_once = true;
   }
 
   void init(ros::NodeHandle& nh) {
@@ -406,6 +428,10 @@ class Nodelet : public nodelet::Nodelet {
     nh.getParam("rpg_cmd", rpg_cmd_);
     nh.getParam("yaw_right_distance", yaw_right_distance_);
     nh.getParam("using_grasper", using_grasper);
+    nh.getParam("retakeoff_branch_px", retakeoff_branch_target_pos_.x());
+    nh.getParam("retakeoff_branch_py", retakeoff_branch_target_pos_.y());
+    nh.getParam("retakeoff_branch_pz", retakeoff_branch_target_pos_.z());
+    nh.getParam("retakeoff_channel", retakeoff_channel_);
 
     visPtr_ = std::make_shared<vis_utils::VisUtils>(nh);
     trajOptPtr_ = std::make_shared<traj_opt::TrajOpt>(nh);
@@ -414,10 +440,13 @@ class Nodelet : public nodelet::Nodelet {
 
     triger_sub_ = nh.subscribe<geometry_msgs::PoseStamped>("triger", 10, &Nodelet::triger_callback, this, ros::TransportHints().tcpNoDelay());
 
+    retakeoff_branch_sub = nh.subscribe<geometry_msgs::PoseStamped>("/slapdrone/retake_off", 10, &Nodelet::retakeoff_branch_cb, this, ros::TransportHints().tcpNoDelay());
+
     now_position_sub = nh.subscribe<nav_msgs::Odometry>("/mocap/slapDrone", 10, &Nodelet::now_position_cb, this, ros::TransportHints().tcpNoDelay());
 
     branch_pose_sub = nh.subscribe<nav_msgs::Odometry>("/mocap/realBranch", 10, &Nodelet::branch_pose_cb, this, ros::TransportHints().tcpNoDelay());
 
+    RC_sub = nh.subscribe<mavros_msgs::RCIn>("/mavros/rc/in", 10, &Nodelet::RC_cb, this, ros::TransportHints().tcpNoDelay());
     // dawn
     slap_odom_pub = nh.advertise<quadrotor_msgs::PositionCommand>("/drone_commander/onboard_command", 10);
     
@@ -425,6 +454,7 @@ class Nodelet : public nodelet::Nodelet {
     slap_rpg_odom_pub = nh.advertise<quadrotor_msgs::TrajectoryPoint>("/rpg/command", 10);
 
     slap_grasper_command_pub = nh.advertise<std_msgs::String>("/slap_grasper_command", 1);
+
 
     ROS_WARN("Planning node initialized!");
   }

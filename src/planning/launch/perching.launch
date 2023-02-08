@@ -81,6 +81,13 @@
       <!-- using grasper -->
       <param name="using_grasper" value="true"/>
 
+      <!-- target position when take off from branch -->
+      <param name="retakeoff_branch_px" value="0.0"/>
+      <param name="retakeoff_branch_py" value="0.0"/>
+      <param name="retakeoff_branch_pz" value="1.0"/>
+      <!-- count from 0, so in your RC it shoud be the value+1 -->
+      <param name="retakeoff_channel" value="10"/>
+
     </node>
 
     <node pkg="planning" name="traj_server" type="traj_server" output="screen">
