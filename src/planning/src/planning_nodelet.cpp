@@ -64,7 +64,20 @@ class Nodelet : public nodelet::Nodelet {
 
   // dawn pub the cmd topic to slapDrone_base
   quadrotor_msgs::PositionCommand slap_odom;
-  quadrotor_msgs::TrajectoryPoint slap_rpg_odom;  double second_branch_angle;
+  quadrotor_msgs::TrajectoryPoint slap_rpg_odom;
+
+  std::shared_ptr<vis_utils::VisUtils> visPtr_;
+  std::shared_ptr<traj_opt::TrajOpt> trajOptPtr_;
+
+  // NOTE planning or fake target
+  bool target_ = false;
+  Eigen::Vector3d goal_;
+
+  // NOTE just for debug
+  bool debug_ = false;
+  bool once_ = false;
+  bool debug_replan_ = false;
+
   double tracking_dur_, tracking_dist_, tolerance_d_;
   Eigen::Vector3d perching_p_, perching_v_, perching_axis_;
   double perching_theta_;
