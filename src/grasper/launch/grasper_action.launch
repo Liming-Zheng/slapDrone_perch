@@ -1,0 +1,12 @@
+<launch>
+    <node pkg="grasper" name="grasper_action" type="grasper_action" output="screen">
+        <param name="time_one_round" value="1.6"/>
+        <param name="num_close" value="4.0"/>
+        <param name="num_open" value="4.5"/>
+        <param name="servo_throttle" value="-0.1"/>
+        <param name="channel_360" value="6"/>
+        <param name="channel_180" value="1"/>
+        <param name="trigger_on_angle" value="95.0"/>
+        <param name="trigger_off_angle" value="130.0"/>
+    </node>
+</launch>

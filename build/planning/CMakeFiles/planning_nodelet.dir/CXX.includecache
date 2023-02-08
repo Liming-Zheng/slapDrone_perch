@@ -89,6 +89,8 @@ cmath
 -
 vis_utils/vis_utils.hpp
 -
+std_msgs/String.h
+-
 pluginlib/class_list_macros.h
 -
 
@@ -491,7 +493,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -509,7 +511,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -527,7 +529,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -549,7 +551,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -1231,7 +1233,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -1249,7 +1251,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -1269,7 +1271,7 @@ string
 -
 vector
 -
-map
+memory
 -
 ros/types.h
 -
@@ -1318,6 +1320,22 @@ string
 vector
 -
 map
+-
+ros/types.h
+-
+ros/serialization.h
+-
+ros/builtin_message_traits.h
+-
+ros/message_operations.h
+-
+
+/opt/ros/noetic/include/std_msgs/String.h
+string
+-
+vector
+-
+memory
 -
 ros/types.h
 -

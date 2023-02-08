@@ -132,6 +132,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/dawn/Drone/SlapDrone/slapDrone_perch/build/gtest/cmake_install.cmake")
   include("/home/dawn/Drone/SlapDrone/slapDrone_perch/build/quadrotor_msgs/cmake_install.cmake")
+  include("/home/dawn/Drone/SlapDrone/slapDrone_perch/build/grasper/cmake_install.cmake")
   include("/home/dawn/Drone/SlapDrone/slapDrone_perch/build/odom_vis/pose_utils/cmake_install.cmake")
   include("/home/dawn/Drone/SlapDrone/slapDrone_perch/build/odom_vis/odom_visualization/cmake_install.cmake")
   include("/home/dawn/Drone/SlapDrone/slapDrone_perch/build/vis_utils/cmake_install.cmake")

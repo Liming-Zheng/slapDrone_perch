@@ -6,6 +6,7 @@
 # testing this directory and lists subdirectories to be tested as well.
 subdirs("gtest")
 subdirs("quadrotor_msgs")
+subdirs("grasper")
 subdirs("odom_vis/pose_utils")
 subdirs("odom_vis/odom_visualization")
 subdirs("vis_utils")

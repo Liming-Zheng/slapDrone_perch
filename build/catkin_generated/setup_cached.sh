@@ -9,7 +9,6 @@
 # modified environment variables
 export CMAKE_PREFIX_PATH="/home/dawn/Drone/SlapDrone/slapDrone_perch/devel:$CMAKE_PREFIX_PATH"
 export LD_LIBRARY_PATH="/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib:$LD_LIBRARY_PATH"
-export PATH='/home/dawn/Drone/Fixedwing/devel/bin:/opt/ros/noetic/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/dawn/.local/bin:/usr/local/cuda-11.6/bin:/opt/gcc-arm-none-eabi-9-2020-q2-update/bin:/home/dawn/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/zyl/QT/6.2.0/gcc_64/bin/:/home/zyl/QT/Tools/QtCreator/bin/'
 export PKG_CONFIG_PATH="/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/pkgconfig:$PKG_CONFIG_PATH"
 export PWD='/home/dawn/Drone/SlapDrone/slapDrone_perch/build'
 export PYTHONPATH="/home/dawn/Drone/SlapDrone/slapDrone_perch/devel/lib/python3/dist-packages:$PYTHONPATH"

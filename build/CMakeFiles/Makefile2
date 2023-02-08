@@ -55,6 +55,7 @@ CMAKE_BINARY_DIR = /home/dawn/Drone/SlapDrone/slapDrone_perch/build
 # The main recursive "all" target.
 all: gtest/all
 all: quadrotor_msgs/all
+all: grasper/all
 all: odom_vis/pose_utils/all
 all: odom_vis/odom_visualization/all
 all: vis_utils/all
@@ -66,6 +67,7 @@ all: planning/all
 # The main recursive "preinstall" target.
 preinstall: gtest/preinstall
 preinstall: quadrotor_msgs/preinstall
+preinstall: grasper/preinstall
 preinstall: odom_vis/pose_utils/preinstall
 preinstall: odom_vis/odom_visualization/preinstall
 preinstall: vis_utils/preinstall
@@ -82,6 +84,7 @@ clean: CMakeFiles/tests.dir/clean
 clean: CMakeFiles/download_extra_data.dir/clean
 clean: gtest/clean
 clean: quadrotor_msgs/clean
+clean: grasper/clean
 clean: odom_vis/pose_utils/clean
 clean: odom_vis/odom_visualization/clean
 clean: vis_utils/clean
@@ -89,6 +92,24 @@ clean: traj_opt/clean
 clean: planning/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Directory level rules for directory grasper
+
+# Recursive "all" directory target.
+grasper/all:
+
+.PHONY : grasper/all
+
+# Recursive "preinstall" directory target.
+grasper/preinstall:
+
+.PHONY : grasper/preinstall
+
+# Recursive "clean" directory target.
+grasper/clean:
+
+.PHONY : grasper/clean
 
 #=============================================================================
 # Directory level rules for directory gtest
